@@ -11,8 +11,8 @@ def home():
 
 @routes.route('/placestoeat')
 def places_to_eat():
-    return "<h1>Places to eat page </h1>"
-
+    # return "<h1>Places to eat page </h1>"
+    return render_template("placestoeat.html")
 
 @routes.route('/exploretheoutdoors')
 def explore_the_outdoors():
