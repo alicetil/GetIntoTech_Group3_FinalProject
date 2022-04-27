@@ -11,33 +11,39 @@ def home():
 
 @routes.route('/placestoeat')
 def places_to_eat():
-    return "<h1>Places to eat page </h1>"
+    # return "<h1>Places to eat page </h1>"
+    return render_template("placestoeat.html")
 
 
 @routes.route('/exploretheoutdoors')
 def explore_the_outdoors():
-    return "<h1>Explore the outdoors page</h1>"
+    # return "<h1>Explore the outdoors page</h1>"
+    return render_template("exploretheoutdoors.html")
+
 
 
 @routes.route('/intothecitycentre')
 def into_city_centre():
-    return "<h1>Explore the city centre page</h1>"
+    # return "<h1>Explore the city centre page</h1>"
+    return render_template("intothecitycentre.html")
 
 
 @routes.route('/localevents')
 def local_events():
-    return "<h1>Explore the local events page</h1>"
+    # return "<h1>Explore the local events page</h1>"
+    return render_template("localevents.html")
 
 
 @routes.route('/recommendations')
 def recommendations():
-    return "<h1>Recommendations Page</h1>"
+    # return "<h1>Recommendations Page</h1>"
+    return render_template("recommendations.html")
 
 
 @routes.route('/discounts')
 def discounts():
-    return "<h1>Discounts Page</h1>"
-
+    # return "<h1>Discounts Page</h1>"
+    return render_template("discounts.html")
 
 
 
