@@ -117,3 +117,27 @@ select * from outdoor_activities;
 select * from local_events;
 select * from into_london;
 select * from recommendations;
+
+alter table restaurants add column restaurant_discount varchar (100);
+alter table outdoor_activities add column outdoor_discount varchar (100);
+alter table local_events add column events_discount varchar (100);
+alter table into_london add column london_discount varchar (100);
+alter table recommendations add column recommendation_discount varchar (100);
+
+update restaurants set restaurant_discount = "10% off - show Sky badge" where id=2;
+update restaurants set restaurant_discount = "25% - use code SKY online" where id=4;
+update restaurants set restaurant_discount = "5% off - show Sky badge" where id=6;
+update restaurants set restaurant_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=9;
+
+update outdoor_activities set outdoor_discount = "10% off - show Sky badge" where id=1;
+update outdoor_activities set outdoor_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=2;
+update outdoor_activities set outdoor_discount = "25% - use code SKY online" where id=3;
+update outdoor_activities set outdoor_discount = "8% off - show Sky badge" where id=6;
+update outdoor_activities set outdoor_discount = "22% off - show Sky badge" where id=9;
+
+update local_events set events_discount = "10% off for groups more than 8 - show one Sky badge" where id=1;
+update local_events set events_discount = "10% off - show your Sky badge" where id=6;
+update local_events set events_discount = "15% off - redeem online with code SKY" where id=10;
+
+update into_london set london_discount = "10% off - redeem online with code SKYDISCOUNT" where id=2;
+update into_london set london_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=8;
