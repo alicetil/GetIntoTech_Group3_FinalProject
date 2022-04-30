@@ -20,11 +20,11 @@ with engine.connect() as conn:
     for row in result:
         print(row)
 
-
-Session = sessionmaker(bind=engine)
-
-session = Session()
-
-restaurant = session.query(Restaurants).filter_by(id=2).first()
-
-print(restaurant)
+#
+# Session = sessionmaker(bind=engine)
+#
+# session = Session()
+#
+# restaurant = session.query(Restaurants).filter_by(id=2).first()
+#
+# print(restaurant)
