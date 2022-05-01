@@ -6,7 +6,7 @@
 {% block content %}
 <!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
 
-<section>
+<section xmlns:font-family="http://www.w3.org/1999/xhtml">
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -31,9 +31,62 @@
 </section>
 
 <br><br>
+
+
+
+<!--<h1>Testing: block content feature</h1>-->
+<!--<h1>adding content/grid etc here</h1>-->
+
+<!--GRIDS -- containers testing-->
+
+<div class="container">
+
+    <h1  style="color: #335667; font-size: x-x-x-large; text-align: left; font-family:didot; margin: 1px 1px 6px; >">LISA</h1>
+
+    <div class="row">
+    <!--   "col-md-9" means (for any desktop screen medium or large,) below is taking 9 of 12 columns so 75% of page     -->
+        <div class=".col-md-9">
+        <h2 style ="font-family:didot; color: #50366E; margin: 2px 1px 10px" >What can LISA do for you? </h2>
+        <p style ="font-family:didot; font-size: x-large" >
+            LISA has designed this website to bring you the best places to eat, have fun, be creative and enjoy areas around Osterley for those who are visiting
+            Sky or are employees. This platform has a wide variety of options to chose from. We have also given you the option to also give your recommendations!
+        </p>
+        </div>
+        <!--  for M or Large desktop screen, it'll take up 3 columns BUT for anything smaller than that, it'll take
+                up all 12 columns -->
+        <div class=".col-lg-3">
+            <h2 style="font-size:xx-large; font-family:didot;color: #335667">Our Team</h2>
+            <p style="font-family:didot;font-size:x-large">The name LISA originates from ours names,
+                Livi, Ikraan, Seyram and Alice. We decided to create this brand to create
+                websites delivering the best services for you. This is only the beginning! </p>
+        </div>
+    </div>
+</div>
+
 <br><br>
 <br><br>
 
-<h1>Testing: block content feature</h1>
-<h1>adding content/grid etc here</h1>
+ <div class="row">
+
+        <div class=".col-md-9">
+
+            <h2 style="font-size:xx-large; font-family:didot;color: #173675;margin: 1px 1px 6px;">Have any questions?</h2>
+            <p style="font-family:didot;font-size:x-large">If you have any questions, feedback or suggestions for us, email us
+            on feedback@LISAinc.com</p>
+</div>
+
+
+<br><br>
+<br><br>
+<br><br>
+
+<!--<footer class="container-fluid bg-4 text-center">-->
+<!--        <p style="font-size:x-large; font-family:didot;color: #335667"> &copy; Lisa 2022  <a href="/home"></a></p>-->
+<!--    <p style ="font-family:didot; font-size:medium"><a href="/placestoeat">Places to eat</a></p>-->
+<!--    <p style ="font-family:didot; font-size:medium"><a href="/intothecitycentre">City Centre</a></p>-->
+<!--    <p style ="font-family:didot; font-size:medium"><a href="/localevents">Local events</a></p>-->
+<!--    <p style ="font-family:didot; font-size:medium"><a href="/exploretheoutdoors">Outdoor activities</a></p>-->
+<!--    <p style ="font-family:didot; font-size:medium"><a href="/recommendations">Recommendations</a></p>-->
+<!--</footer>-->
 {% endblock %}
+
