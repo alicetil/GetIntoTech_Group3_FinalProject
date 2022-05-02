@@ -2,12 +2,12 @@ import sqlalchemy
 print(sqlalchemy.__version__)
 from sqlalchemy import text
 
-
 import pymysql
 print(pymysql.__version__)
 
 
 from sqlalchemy import create_engine
+
 engine = create_engine("mysql+pymysql://root:@localhost/visiting_sky_db", echo=False, future=True)
 
 
