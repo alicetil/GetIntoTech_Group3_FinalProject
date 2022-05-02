@@ -1,4 +1,8 @@
-from flask import Blueprint, render_template, jsonify
+from flask import Blueprint, render_template, jsonify, request
+
+from website import service
+from website.domain.recommendations import Recommendations
+from website.forms.recommendationsForm import RecommendForm
 
 routes = Blueprint('routes', __name__)
 
@@ -41,7 +45,7 @@ def local_events():
 
 @routes.route('/recommendations', methods=['GET','POST'])
 def add_recommendations():
-    global recommendations
+    # global recommendations
     error = ""
     form = RecommendForm()
 
@@ -67,7 +71,7 @@ def add_recommendations():
             service.add_new_recommendations(recommendation)
             recommendations = service.get_all_recommendations()
 
-    return render_template("recommendations.html", recommendations=recommendations, message=error)
+    return render_template("recommendations.html", form=form, message=error)
 
 
 
