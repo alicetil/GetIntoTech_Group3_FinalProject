@@ -1,4 +1,4 @@
-from website import db
+from application import db
 # from . import db
 from dataclasses import dataclass
 from sqlalchemy.sql import func

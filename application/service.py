@@ -1,5 +1,5 @@
-from website.domain.recommendations import Recommendations
-from website import db
+from application.domain.recommendations import Recommendations
+from application import db
 
 
 def add_new_recommendations(recommendation):

@@ -1,8 +1,8 @@
 import sqlalchemy
 from sqlalchemy.orm import sessionmaker
 
-from website.domain.recommendations import Recommendations
-from website.domain.restaurants import Restaurants
+from application.domain.recommendations import Recommendations
+from application.domain.restaurants import Restaurants
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker

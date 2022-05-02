@@ -1,4 +1,4 @@
-from website import db
+from application import db
 from dataclasses import dataclass
 
 
@@ -15,9 +15,12 @@ class Recommendations(db.Model):
     recommendation_location: str
     recommendation_website: str
     # recommendation_category: str
+    # google how to map an image for above
     recommendation_author: str
     recommendation_discount: int
 
+    # add primary key below
+    # we're storing all of our recommended restaurants in a schema looking like below:
     recommendation_name = db.Column(db.String(100), nullable=False)
     recommendation_description = db.Column(db.String(1000), nullable=False)
     recommendation_location = db.Column(db.String(100), nullable=False)
@@ -25,3 +28,10 @@ class Recommendations(db.Model):
     # recommendation_category = db.Column(db.String(100), nullable=False)
     recommendation_author = db.Column(db.String(100), nullable=True)
     recommendation_discount = db.Column(db.Integer, nullable=True)
+
+
+
+# database model = an object/ blueprint in which our database will be stored
+# so above is telling system, all recommendations given need to look
+# like the content held in the class called Recommendations above
+

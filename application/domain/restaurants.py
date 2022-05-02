@@ -1,4 +1,4 @@
-from website import db
+from application import db
 from dataclasses import dataclass
 
 # the annotation below will help to turn the Python object into a JSON object

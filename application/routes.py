@@ -1,8 +1,8 @@
 from flask import Blueprint, render_template, jsonify, request
 
-from website import service
-from website.domain.recommendations import Recommendations
-from website.forms.recommendationsForm import RecommendForm
+from application import service
+from application.domain.recommendations import Recommendations
+from application.forms.recommendationsForm import RecommendForm
 
 routes = Blueprint('routes', __name__)
 
@@ -61,7 +61,7 @@ def add_recommendations():
         recommendation_discount = form.recommendation_discount.data
 
         if len(recommendation_name) == 0 or len(recommendation_description) == 0 or len(recommendation_location) == 0 or len(recommendation_website) == 0:
-            error = "Please supply both name, description, location and website details"
+            error = "Please supply both name, description, location and application details"
         else:
             recommendation = Recommendations(recommendation_name=recommendation_name, recommendation_description= recommendation_description,
                                              recommendation_location=recommendation_location, recommendation_website=recommendation_website,

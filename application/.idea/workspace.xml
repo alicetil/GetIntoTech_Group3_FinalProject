@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56741054-083e-47d6-9be1-fd8de6083041" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../application/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/dbScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/recommendations.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/domain/recommendations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/restaurants.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/domain/restaurants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms/recommendationsForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/forms/recommendationsForm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/../application/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Paddleboarding.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/Paddleboarding.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Park-aerial.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/Park-aerial.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/adventure cinema.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/adventure cinema.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/another lake.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/another lake.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/family national trust.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/family national trust.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/flowershouse.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/flowershouse.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/huge tree.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/huge tree.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/lake.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/lake.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/museum war.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/museum war.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/national trust easter.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/national trust easter.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/national trust library.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/national trust library.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/national trust winter.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/national trust winter.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/nationaltrust red room.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/nationaltrust red room.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/osterley house.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/osterley house.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/osterley-trees.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/osterley-trees.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/parkaeriel2.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/parkaeriel2.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/pooch.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/pooch.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/restaurant.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/restaurant.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/roses.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/roses.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/spring.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/spring.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/tigerlily.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/tigerlily.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/winter.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/images/winter.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/project.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../application/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/discounts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/discounts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exploretheoutdoors.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/exploretheoutdoors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/intothecitycentre.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/intothecitycentre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/localevents.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/localevents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/placestoeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/placestoeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recommendations.html" beforeDir="false" afterPath="$PROJECT_DIR$/../application/templates/recommendations.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28LcZpqCAVE448sjBc9suCN0iwD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/../mainapp2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main_app">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auth" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auth.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dbScript" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbScript.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../main_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="routes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/routes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.auth" />
+      <item itemvalue="Python.dbScript" />
+      <item itemvalue="Python.routes" />
+      <item itemvalue="Python.main_app" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main_app" />
+        <item itemvalue="Python.routes" />
+        <item itemvalue="Python.dbScript" />
+        <item itemvalue="Python.auth" />
+        <item itemvalue="Python.__init__" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56741054-083e-47d6-9be1-fd8de6083041" name="Changes" comment="" />
+      <created>1650999364886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650999364886</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

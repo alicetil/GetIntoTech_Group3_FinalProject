@@ -1,5 +1,5 @@
-from website import create_app
-from website import app
+from application import app
+from application import routes
 
 # app = create_app()
 
