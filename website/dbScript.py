@@ -1,7 +1,7 @@
 import sqlalchemy
 from sqlalchemy.orm import sessionmaker
 
-from website.models.restaurants import Restaurants
+from website.models.wrong import Restaurants
 
 print(sqlalchemy.__version__)
 from sqlalchemy import text
