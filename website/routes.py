@@ -75,6 +75,7 @@ def add_recommendations():
 
 
 
+
 @routes.route('/discounts')
 def discounts():
     # return "<h1>Discounts Page</h1>"

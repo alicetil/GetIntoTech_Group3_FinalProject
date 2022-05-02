@@ -3,6 +3,9 @@ from dataclasses import dataclass
 
 
 # the annotation below will help to turn the Python object into a JSON object
+# ORM - Object relational mapping - mapping class to a table
+# DTO - data transfer object
+
 @dataclass
 class Recommendations(db.Model):
     # the declarations below are important for turning the object into JSON

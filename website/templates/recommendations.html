@@ -11,27 +11,44 @@
         {{ form.csrf_token }}
         <div class="row">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.name.label (class_="form-label") }}</div>
-                <div class="col-md-10">{{ form.name (class_="form-control", size =32)}}</div>
+<!--                inheriting from the RecommendForm class-->
+                <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>
             </div>
         </div>
         <div class="row">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.alias.label(class_="form-label")}}</div>
-                <div class="col-md-10">{{ form.alias(class_="form-control", size =32)}}</div>
+                <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>
             </div>
         </div>
         <div class="row">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.superPower.label (class_="form-label")}}</div>
-                <div class="col-md-10">{{ form.superPower (class_="form-control", size =32) }}</div>
+                <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>
             </div>
         </div>
         <div class="row">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.teamID.label (class_="form-label") }}</div>
-                <div class="col-md-10">{{ form.teamID(class_="form-control", size =32) }}</div>
+                <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>
             </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_category(class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_author(class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_discount(class_="form-control", size =32) }}</div>
+            </div>
+
         <div class="row">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>
