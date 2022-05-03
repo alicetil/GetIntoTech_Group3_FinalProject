@@ -56,7 +56,7 @@ def add_recommendations():
         recommendation_description = form.recommendation_description.data
         recommendation_location = form.recommendation_location.data
         recommendation_website = form.recommendation_website.date
-        # recommendation_category = form.recommendation_category.data
+        recommendation_category = form.recommendation_category.data
         recommendation_author = form.recommendation_author.data
         recommendation_discount = form.recommendation_discount.data
 
@@ -75,6 +75,12 @@ def add_recommendations():
     return render_template('recommendations.html', form=form, message=error)
 
 
+
+
+@app.route('/list')
+def list():
+    # return "<h1>Discounts Page</h1>"
+    return render_template("list_recommendations.html")
 
 
 
