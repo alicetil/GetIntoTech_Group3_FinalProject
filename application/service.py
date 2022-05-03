@@ -1,5 +1,5 @@
 from application.domain.recommendations import Recommendations
-from application.domain.recommendations import Restaurants
+# from application.domain.recommendations import Restaurants
 from application import db
 
 # need to add restaurants functions too

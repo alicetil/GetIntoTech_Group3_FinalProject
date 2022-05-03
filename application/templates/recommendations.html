@@ -4,14 +4,21 @@
 {% block content %}
 <!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
 
-<!--MARTINA'S FORMS CODE:-->
+
+
+<!--This page has the form for users to input their recommended places-->
+<!-- recommendation_whatever is located in the Class we created for the recommendation form. Now we're creating
+a form to have those 'schemas' or columns added into our form database. same thing also found in the route page for
+add_recommendations() function in it's if statement variable names-->
+<section>
 <div class='container-sm' style="width:50%">
+    <form></form>
+
     <form method='POST' action=''>
         <!-- provides CRSF protection, alongside secret key. Use on all POST forms -->
         {{ form.csrf_token }}
         <div class="row">
             <div class = "mb-3">
-<!--                inheriting from the RecommendForm class-->
                 <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>
                 <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>
             </div>
@@ -35,28 +42,88 @@
             </div>
         <div class="row">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label") }}</div>
-                <div class="col-md-10">{{ form.recommendation_category(class_="form-control", size =32) }}</div>
+                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_category (class_="form-control", size =32) }}</div>
             </div>
         <div class="row">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label") }}</div>
-                <div class="col-md-10">{{ form.recommendation_author(class_="form-control", size =32) }}</div>
+                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_discount (class_="form-control", size =32) }}</div>
             </div>
         <div class="row">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label") }}</div>
-                <div class="col-md-10">{{ form.recommendation_discount(class_="form-control", size =32) }}</div>
+                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_author (class_="form-control", size =32) }}</div>
             </div>
-
         <div class="row">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>
             </div>
         </div>
         {{ message }}
-        </div>
     </form>
+</div>
+</section>
+
+
+
+
+
+
+
+<!--&lt;!&ndash;MARTINA'S FORMS CODE:&ndash;&gt;-->
+<!--<div class='container-sm' style="width:50%">-->
+<!--    <form method='POST' action=''>-->
+<!--        &lt;!&ndash; provides CRSF protection, alongside secret key. Use on all POST forms &ndash;&gt;-->
+<!--        {{ form.csrf_token }}-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--&lt;!&ndash;                inheriting from the RecommendForm class&ndash;&gt;-->
+<!--                <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_category(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_author(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_discount(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        {{ message }}-->
+<!--        </div>-->
+<!--    </form>-->
 
 
 

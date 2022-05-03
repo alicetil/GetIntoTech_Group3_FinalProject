@@ -9,7 +9,7 @@ class RecommendForm(FlaskForm):
     recommendation_location = StringField("Location")
     recommendation_website = StringField("Website Link")
     # option below for category
-    # recommendation_category = StringField("")
+    recommendation_category = StringField("")
     recommendation_author = StringField("Author's Name")
     recommendation_discount = IntegerField("Discount Amount")
 

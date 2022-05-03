@@ -1,38 +1,37 @@
 from flask import Blueprint, render_template, jsonify, request
 
-from application import service
+from application import service, app
 from application.domain.recommendations import Recommendations
 from application.forms.recommendationsForm import RecommendForm
 
-routes = Blueprint('routes', __name__)
+# routes = Blueprint('routes', __name__)
 
 
-@routes.route('/')
+@app.route('/')
 def home():
     # return "<h1>Testing this home page route</h1>"
     return render_template("home.html")
 
 
-@routes.route('/placestoeat')
+@app.route('/placestoeat')
 def places_to_eat():
     # return "<h1>Places to eat page </h1>"
     return render_template("placestoeat.html")
 
 
-@routes.route('/exploretheoutdoors')
+@app.route('/exploretheoutdoors')
 def explore_the_outdoors():
     # return "<h1>Explore the outdoors page</h1>"
     return render_template("exploretheoutdoors.html")
 
 
-
-@routes.route('/intothecitycentre')
+@app.route('/intothecitycentre')
 def into_city_centre():
     # return "<h1>Explore the city centre page</h1>"
     return render_template("intothecitycentre.html")
 
 
-@routes.route('/localevents')
+@app.route('/localevents')
 def local_events():
     # return "<h1>Explore the local events page</h1>"
     return render_template("localevents.html")
@@ -44,7 +43,7 @@ def local_events():
 #     return render_template("recommendations.html")
 
 
-@routes.route('/recommendations', methods=['GET','POST'])
+@app.route('/recommendations', methods=['GET','POST'])
 def add_recommendations():
     # global recommendations
     error = ""
@@ -71,14 +70,15 @@ def add_recommendations():
 
             service.add_new_recommendations(recommendation)
             recommendations = service.get_all_recommendations()
-            return render_template('your_recommendations.html', recommendations=recommendations, message=error)
+            return render_template('list_recommendations.html', recommendations=recommendations, message=error)
 
-    return render_template("recommendations.html", form=form, message=error)
-
-
+    return render_template('recommendations.html', form=form, message=error)
 
 
-@routes.route('/discounts')
+
+
+
+@app.route('/discounts')
 def discounts():
     # return "<h1>Discounts Page</h1>"
     return render_template("discounts.html")
