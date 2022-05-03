@@ -21,6 +21,7 @@ class Recommendations(db.Model):
 
     # add primary key below
     # we're storing all of our recommended restaurants in a schema looking like below:
+    recommendations_id = db.Column(db.Integer, primary_key=True)
     recommendation_name = db.Column(db.String(100), nullable=False)
     recommendation_description = db.Column(db.String(1000), nullable=False)
     recommendation_location = db.Column(db.String(100), nullable=False)
@@ -29,6 +30,8 @@ class Recommendations(db.Model):
     recommendation_author = db.Column(db.String(100), nullable=True)
     recommendation_discount = db.Column(db.Integer, nullable=True)
 
+
+# we don't have a foreign key for recommendations inputted right?
 
 
 # database model = an object/ blueprint in which our database will be stored

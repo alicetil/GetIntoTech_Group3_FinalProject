@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Your Recommendations!{% endblock %}
+
+
+{% block content %}
+<!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
+
+<!-- recommendation_whatever is located in the Class we created for the recommendation form. Now we're creating
+a form to have those 'schemas' or columns added into our form database. same thing also found in the route page for
+add_recommendations() function in its if statement variable names-->
+
+
+<div class='container-sm' style="width:50%">
+    <form method='POST' action=''>
+        <!-- provides CRSF protection, alongside secret key. Use on all POST forms -->
+        {{ form.csrf_token }}
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_category (class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_discount (class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_author (class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>
+            </div>
+        </div>
+        {{ message }}
+    </form>
+</div>
+
+
+{% endblock %}
+
+<!--this page is equivalent to new_hero_form.html-->

@@ -1,18 +1,10 @@
 from application import app
 from application import routes
 
-# app = create_app()
 
 if __name__ == '__main__':
     app.run(debug=True)
 
 
 
-
-
-# # testing
-#
-# app = create_app()
-#
-# if __name__ == '__main__':
-#     app.run(debug=True)
+# 100% mirroring martina's code on this newest branch

@@ -43,6 +43,7 @@ def local_events():
 #     # return "<h1>Recommendations Page</h1>"
 #     return render_template("recommendations.html")
 
+
 @routes.route('/recommendations', methods=['GET','POST'])
 def add_recommendations():
     # global recommendations
@@ -61,7 +62,7 @@ def add_recommendations():
         recommendation_discount = form.recommendation_discount.data
 
         if len(recommendation_name) == 0 or len(recommendation_description) == 0 or len(recommendation_location) == 0 or len(recommendation_website) == 0:
-            error = "Please supply both name, description, location and application details"
+            error = "you're missing one of these: name, description, location and website details. Please supply."
         else:
             recommendation = Recommendations(recommendation_name=recommendation_name, recommendation_description= recommendation_description,
                                              recommendation_location=recommendation_location, recommendation_website=recommendation_website,
@@ -70,6 +71,7 @@ def add_recommendations():
 
             service.add_new_recommendations(recommendation)
             recommendations = service.get_all_recommendations()
+            return render_template('your_recommendations.html', recommendations=recommendations, message=error)
 
     return render_template("recommendations.html", form=form, message=error)
 

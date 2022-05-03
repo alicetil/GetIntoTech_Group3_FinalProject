@@ -1,6 +1,8 @@
 from application.domain.recommendations import Recommendations
+from application.domain.recommendations import Restaurants
 from application import db
 
+# need to add restaurants functions too
 
 def add_new_recommendations(recommendation):
     db.session.add(recommendation)
@@ -14,22 +16,3 @@ def get_all_recommendations():
     return Recommendations.query.all()
 
 
-
-#
-# def get_hero_by_id(hero_id):
-#     if hero_id > 0:
-#         return Heroes.query.get(hero_id)
-#     else:
-#         return None
-#
-#
-# def get_team_by_id(team_id):
-#     if team_id < 100:
-#         return Teams.query.get(team_id)
-#     else:
-#         return None
-#
-#
-# def add_new_hero(hero):
-#     db.session.add(hero)
-#     db.session.commit()
