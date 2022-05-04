@@ -41,7 +41,7 @@ class Recommendations(db.Model):
     recommendation_description = db.Column(db.String(1000), nullable=False)
     recommendation_location = db.Column(db.String(100), nullable=False)
     recommendation_website = db.Column(db.String(100), nullable=False)
-    recommendation_category = db.Column()
+    recommendation_category = db.Column(db.String(100))
     # recommendation_category = db.Column(db.String(100), nullable=False)
     recommendation_discount = db.Column(db.Integer, nullable=True)
     recommendation_author = db.Column(db.String(100), nullable=True)
@@ -55,9 +55,6 @@ class Recommendations(db.Model):
 #     db.relationship('Mobility', backref='username', lazy='dynamic')
 
 
-
-# jinja2.exceptions.UndefinedError: 'application.forms.recommendationsForm.RecommendForm object'
-# has no attribute 'recommendation_category'
 
 
 

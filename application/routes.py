@@ -45,7 +45,6 @@ def local_events():
 
 @app.route('/recommendations', methods=['GET','POST'])
 def add_recommendations():
-    # global recommendations
     error = ""
     form = RecommendForm()
 
@@ -55,7 +54,7 @@ def add_recommendations():
         recommendation_name = form.recommendation_name.data
         recommendation_description = form.recommendation_description.data
         recommendation_location = form.recommendation_location.data
-        recommendation_website = form.recommendation_website.date
+        recommendation_website = form.recommendation_website.data
         recommendation_category = form.recommendation_category.data
         recommendation_author = form.recommendation_author.data
         recommendation_discount = form.recommendation_discount.data
@@ -65,8 +64,8 @@ def add_recommendations():
         else:
             recommendation = Recommendations(recommendation_name=recommendation_name, recommendation_description= recommendation_description,
                                              recommendation_location=recommendation_location, recommendation_website=recommendation_website,
-                                             recommendation_author=recommendation_author, recommendation_discount=recommendation_discount)
-                                            # add this when ready:  recommendation_category=recommendation_category
+                                             recommendation_category=recommendation_category, recommendation_author=recommendation_author,
+                                             recommendation_discount=recommendation_discount)
 
             service.add_new_recommendations(recommendation)
             recommendations = service.get_all_recommendations()
@@ -75,12 +74,14 @@ def add_recommendations():
     return render_template('recommendations.html', form=form, message=error)
 
 
-
-
-@app.route('/list')
-def list():
-    # return "<h1>Discounts Page</h1>"
-    return render_template("list_recommendations.html")
+@app.route('/list', methods=['GET'])
+def show_recomm_list():
+    # return "<h1>Recommendations List Page</h1>"
+    error = ""
+    recommendations = service.get_all_recommendations()
+    if len(recommendations) == 0:
+        error = "There are no recommendations to display. Do add one!"
+    return render_template("list_recommendations.html", recommendations=recommendations, message=error)
 
 
 

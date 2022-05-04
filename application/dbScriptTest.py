@@ -36,9 +36,9 @@ print(restaurant.restaurant_name, restaurant.restaurant_address, restaurant.rest
 #     # restaurant_image (to be added between restaurant_website and restaurant_description)
 
 
-recommendations = session.query(Recommendations).filter_by(recommendations_id=4).first()
-print(recommendations.recommendation_location, recommendations.recommendation_discount)
-for x in recommendations.recommendation_location:
+recommendation = session.query(Recommendations).filter_by(recommendations_id=1).first()
+print(recommendation.recommendation_location, recommendation.recommendation_discount)
+for x in recommendation.recommendation_location:
     print(x.recommendation_name, x.recommendation_address)
 
 
