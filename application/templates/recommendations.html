@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% block title %}You Recommend!{% endblock %}
+
+{% block content %}
+<!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
+
+
+<!--This page has the form for users to input their recommended places-->
+<!-- recommendation_whatever is located in the Class we created for the recommendation form. Now we're creating
+a form to have those 'schemas' or columns added into our form database. same thing also found in the route page for
+add_recommendations() function in it's if statement variable names-->
+<section>
+<div class='container-fluid' style="width:50%">
+    <form></form>
+
+    <form method='POST' action=''>
+        <!-- provides CRSF protection, alongside secret key. Use on all POST forms -->
+        {{ form.csrf_token }}
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>
+                <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_category (class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_discount (class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label")}}</div>
+                <div class="col-md-10">{{ form.recommendation_author (class_="form-control", size =32) }}</div>
+            </div>
+        <div class="row">
+            <div class = "mb-3">
+                <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>
+            </div>
+        </div>
+        {{ message }}
+    </form>
+</div>
+</section>
+
+
+
+
+
+
+
+<!--&lt;!&ndash;MARTINA'S FORMS CODE:&ndash;&gt;-->
+<!--<div class='container-sm' style="width:50%">-->
+<!--    <form method='POST' action=''>-->
+<!--        &lt;!&ndash; provides CRSF protection, alongside secret key. Use on all POST forms &ndash;&gt;-->
+<!--        {{ form.csrf_token }}-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--&lt;!&ndash;                inheriting from the RecommendForm class&ndash;&gt;-->
+<!--                <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_category(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_author(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label") }}</div>-->
+<!--                <div class="col-md-10">{{ form.recommendation_discount(class_="form-control", size =32) }}</div>-->
+<!--            </div>-->
+
+<!--        <div class="row">-->
+<!--            <div class = "mb-3">-->
+<!--                <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        {{ message }}-->
+<!--        </div>-->
+<!--    </form>-->
+
+
+
+<!--<br><br>-->
+<!--<br><br>-->
+<!--<br><br>-->
+<!--<br><br>-->
+<!--  -->
+<!--<form class="was-validated">-->
+<!--  <div class="mb-3">-->
+<!--    <label for="validationTextarea">Textarea</label>-->
+<!--    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>-->
+<!--    <div class="invalid-feedback">-->
+<!--      Please enter a message in the textarea.-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div class="custom-control custom-checkbox mb-3">-->
+<!--    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>-->
+<!--    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>-->
+<!--    <div class="invalid-feedback">Example invalid feedback text</div>-->
+<!--  </div>-->
+
+<!--  <div class="custom-control custom-radio">-->
+<!--    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>-->
+<!--    <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>-->
+<!--  </div>-->
+<!--  <div class="custom-control custom-radio mb-3">-->
+<!--    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>-->
+<!--    <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>-->
+<!--    <div class="invalid-feedback">More example invalid feedback text</div>-->
+<!--  </div>-->
+
+<!--  <div class="form-group">-->
+<!--    <select class="custom-select" required>-->
+<!--      <option value="">Open this select menu</option>-->
+<!--      <option value="1">One</option>-->
+<!--      <option value="2">Two</option>-->
+<!--      <option value="3">Three</option>-->
+<!--    </select>-->
+<!--    <div class="invalid-feedback">Example invalid custom select feedback</div>-->
+<!--  </div>-->
+
+<!--  <div class="custom-file">-->
+<!--    <input type="file" class="custom-file-input" id="validatedCustomFile" required>-->
+<!--    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>-->
+<!--    <div class="invalid-feedback">Example invalid custom file feedback</div>-->
+<!--  </div>-->
+<!--</form>-->
+
+{% endblock %}

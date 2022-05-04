@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}City Centre{% endblock %}
+
+{% block content %}
+<!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
+
+<h2> INTO THE CITY CENTRE table example!</h2>
+
+<!--mirroring M's code:-->
+<!--we'll have to display a pic with that item too-->
+<div>
+{% for item in local_event %}
+   <p>{{item.id}} {{item.london_name}} {{item.london_location}}
+       {{item.london_travel}} {{item.london_website}}</p>
+{% endfor %}
+    <br>
+    {{ message }}
+</div>
+
+{% endblock %}
+
