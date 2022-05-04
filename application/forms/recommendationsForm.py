@@ -4,7 +4,7 @@ from wtforms import StringField, SubmitField, IntegerField
 
 
 class RecommendForm(FlaskForm):
-    recommendation_name = StringField("Where Or What Is Being Recommended?")
+    recommendation_name = StringField("Where Or What? Recommend Away.")
     recommendation_description = StringField("Brief Description")
     recommendation_location = StringField("Location")
     recommendation_website = StringField("Website Link")

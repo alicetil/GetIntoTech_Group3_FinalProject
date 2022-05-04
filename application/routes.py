@@ -37,12 +37,6 @@ def local_events():
     return render_template("localevents.html")
 
 
-# @routes.route('/recommendations')
-# def recommendations():
-#     # return "<h1>Recommendations Page</h1>"
-#     return render_template("recommendations.html")
-
-
 @app.route('/recommendations', methods=['GET','POST'])
 def add_recommendations():
     error = ""
