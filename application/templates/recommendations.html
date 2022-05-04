@@ -5,6 +5,40 @@
 <!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
 
 
+<div class = "container">
+  <h1 > Recommendations</h1>
+  <br><br>
+
+  <form action ="/form" method="POST">
+            <!-- provides CRSF protection, alongside secret key. Use on all POST forms -->
+        {{ form.csrf_token }}
+    <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+
+  </div>
+
+    <div class="form-group">
+    <label for="exampleInputEmail1">First Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name" name="First_name">
+
+
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Last name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name" name=" last_name">
+
+  </div>
+
+ <br/>
+  <button type="submit" class="btn btn-secondary">Submit</button>
+</form>
+</div>
+
+
+
 <!--This page has the form for users to input their recommended places-->
 <!-- recommendation_whatever is located in the Class we created for the recommendation form. Now we're creating
 a form to have those 'schemas' or columns added into our form database. same thing also found in the route page for
@@ -16,45 +50,45 @@ add_recommendations() function in it's if statement variable names-->
     <form method='POST' action=''>
         <!-- provides CRSF protection, alongside secret key. Use on all POST forms -->
         {{ form.csrf_token }}
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>
                 <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>
             </div>
         </div>
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>
             </div>
         </div>
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>
             </div>
         </div>
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>
                 <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>
             </div>
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_category (class_="form-control", size =32) }}</div>
             </div>
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_discount (class_="form-control", size =32) }}</div>
             </div>
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_author (class_="form-control", size =32) }}</div>
             </div>
-        <div class="row">
+        <div class="form-group">
             <div class = "mb-3">
                 <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>
             </div>

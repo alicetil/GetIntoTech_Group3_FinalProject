@@ -4,7 +4,6 @@ from application import service, app
 from application.domain.recommendations import Recommendations
 from application.forms.recommendationsForm import RecommendForm
 
-# routes = Blueprint('routes', __name__)
 
 
 @app.route('/')
@@ -77,12 +76,18 @@ def show_recomm_list():
         error = "There are no recommendations to display. Do add one!"
     return render_template("list_recommendations.html", recommendations=recommendations, message=error)
 
+@app.route('/contact')
+def contact():
+    # return "<h1>Contact Page</h1>"
+    return render_template("contact.html")
 
 
 @app.route('/discounts')
 def discounts():
     # return "<h1>Discounts Page</h1>"
     return render_template("discounts.html")
+
+
 
 
 

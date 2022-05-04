@@ -50,13 +50,3 @@ with engine.connect() as conn:
 
 
 
-
-
-# martina's code:
-# team = Teams(affiliation='X-men', objective='Being eXXXtra cool')
-# session.add(team)
-# session.commit()
-
-# hero = Heroes(name='Clinton Barton', alias='Hawkeye', superPower='Master Archer', teamID=4)
-# session.add(hero)
-# session.commit()
