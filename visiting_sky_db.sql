@@ -141,3 +141,5 @@ update local_events set events_discount = "15% off - redeem online with code SKY
 
 update into_london set london_discount = "10% off - redeem online with code SKYDISCOUNT" where id=2;
 update into_london set london_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=8;
+
+alter table recommendations modify column recommendation_website varchar (1000);

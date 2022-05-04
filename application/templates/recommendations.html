@@ -5,37 +5,37 @@
 <!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
 
 
-<div class = "container">
-  <h1 > Recommendations</h1>
-  <br><br>
+<!--code showing on website atm: -->
+<head></head>
 
-  <form action ="/form" method="POST">
-            <!-- provides CRSF protection, alongside secret key. Use on all POST forms -->
-        {{ form.csrf_token }}
-    <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-
-
-  </div>
-
-    <div class="form-group">
-    <label for="exampleInputEmail1">First Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name" name="First_name">
-
-
-  </div>
-
-  <div class="form-group">
-    <label for="exampleInputEmail1">Last name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name" name=" last_name">
-
-  </div>
-
- <br/>
-  <button type="submit" class="btn btn-secondary">Submit</button>
-</form>
+<!--title code-->
+<body>
+<br>
+<br>
+<div class="container-fluid">
+ <div class="text-center">
+     <div class="display-1"<h4>Recommend Away</h4>
 </div>
+<br>
+<!--intro info code-->
+<br>
+    <p class="lead">
+With plenty of places to do around Sky Osterley campus itself, is there a place you know that we may love? Don't keep it yourself and let us all know!
+</p>
+
+<br>
+    <br>
+    <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">What great spaces do you know? </h1>
+          <p class="lead text-muted"> Below are some of our top recommendations from our users. If you know somewhere good recommend below</p>
+          <p>
+              <a href="https://www.google.co.uk/maps" class="btn btn-secondary my-2"> How to get there? </a>
+          </p>
+        </div>
+      </section>
+</body>
+
 
 
 
@@ -104,107 +104,39 @@ add_recommendations() function in it's if statement variable names-->
 
 
 
-<!--&lt;!&ndash;MARTINA'S FORMS CODE:&ndash;&gt;-->
-<!--<div class='container-sm' style="width:50%">-->
-<!--    <form method='POST' action=''>-->
-<!--        &lt;!&ndash; provides CRSF protection, alongside secret key. Use on all POST forms &ndash;&gt;-->
+<!--Update to this form after functionality sorted out - Today 4th May-->
+<!--<div class = "container">-->
+<!--  <h1 > Recommendations</h1>-->
+<!--  <br><br>-->
+
+<!--  <form action ="/form" method="POST">-->
+<!--            &lt;!&ndash; provides CRSF protection, alongside secret key. Use on all POST forms &ndash;&gt;-->
 <!--        {{ form.csrf_token }}-->
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--&lt;!&ndash;                inheriting from the RecommendForm class&ndash;&gt;-->
-<!--                <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>-->
-<!--                <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--                <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>-->
-<!--                <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--                <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>-->
-<!--                <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--                <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>-->
-<!--                <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>-->
-<!--            </div>-->
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label") }}</div>-->
-<!--                <div class="col-md-10">{{ form.recommendation_category(class_="form-control", size =32) }}</div>-->
-<!--            </div>-->
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label") }}</div>-->
-<!--                <div class="col-md-10">{{ form.recommendation_author(class_="form-control", size =32) }}</div>-->
-<!--            </div>-->
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label") }}</div>-->
-<!--                <div class="col-md-10">{{ form.recommendation_discount(class_="form-control", size =32) }}</div>-->
-<!--            </div>-->
-
-<!--        <div class="row">-->
-<!--            <div class = "mb-3">-->
-<!--                <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        {{ message }}-->
-<!--        </div>-->
-<!--    </form>-->
+<!--    <div class="form-group">-->
+<!--    <label for="exampleInputEmail1">Recommend</label>-->
+<!--    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">-->
 
 
-
-<!--<br><br>-->
-<!--<br><br>-->
-<!--<br><br>-->
-<!--<br><br>-->
-<!--  -->
-<!--<form class="was-validated">-->
-<!--  <div class="mb-3">-->
-<!--    <label for="validationTextarea">Textarea</label>-->
-<!--    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>-->
-<!--    <div class="invalid-feedback">-->
-<!--      Please enter a message in the textarea.-->
-<!--    </div>-->
 <!--  </div>-->
 
-<!--  <div class="custom-control custom-checkbox mb-3">-->
-<!--    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>-->
-<!--    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>-->
-<!--    <div class="invalid-feedback">Example invalid feedback text</div>-->
-<!--  </div>-->
+<!--    <div class="form-group">-->
+<!--    <label for="exampleInputEmail1">First Name</label>-->
+<!--    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name" name="First_name">-->
 
-<!--  <div class="custom-control custom-radio">-->
-<!--    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>-->
-<!--    <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>-->
-<!--  </div>-->
-<!--  <div class="custom-control custom-radio mb-3">-->
-<!--    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>-->
-<!--    <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>-->
-<!--    <div class="invalid-feedback">More example invalid feedback text</div>-->
+
 <!--  </div>-->
 
 <!--  <div class="form-group">-->
-<!--    <select class="custom-select" required>-->
-<!--      <option value="">Open this select menu</option>-->
-<!--      <option value="1">One</option>-->
-<!--      <option value="2">Two</option>-->
-<!--      <option value="3">Three</option>-->
-<!--    </select>-->
-<!--    <div class="invalid-feedback">Example invalid custom select feedback</div>-->
+<!--    <label for="exampleInputEmail1">Last name</label>-->
+<!--    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last name" name=" last_name">-->
+
 <!--  </div>-->
 
-<!--  <div class="custom-file">-->
-<!--    <input type="file" class="custom-file-input" id="validatedCustomFile" required>-->
-<!--    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>-->
-<!--    <div class="invalid-feedback">Example invalid custom file feedback</div>-->
-<!--  </div>-->
+<!-- <br/>-->
+<!--  <button type="submit" class="btn btn-secondary">Submit</button>-->
 <!--</form>-->
+<!--</div>-->
+
+
 
 {% endblock %}
