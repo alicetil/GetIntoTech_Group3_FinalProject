@@ -25,7 +25,7 @@ class UserCategory(Enum):
 @dataclass
 class Recommendations(db.Model):
     # the declarations below are important for turning the object into JSON
-    recommendations_id: int
+    id: int
     recommendation_name: str
     recommendation_description: str
     recommendation_location: str
@@ -36,7 +36,7 @@ class Recommendations(db.Model):
     recommendation_discount: int
 
     # we're storing all of our recommended restaurants in a schema looking like below:
-    recommendations_id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     recommendation_name = db.Column(db.String(100), nullable=False)
     recommendation_description = db.Column(db.String(1000), nullable=False)
     recommendation_location = db.Column(db.String(100), nullable=False)
