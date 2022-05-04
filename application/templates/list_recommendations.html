@@ -5,19 +5,20 @@
 {% block content %}
 <!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
 
-
+<section class="text-center">
 <h2> YOUR RECOMMENDATIONS! </h2>
 
 
 <!--we'll have to display a pic with that item too...?-->
 <div>
 {% for item in recommendations %}
-   <p>{{item.id}} {{item.recommendations_name}} {{item.recommendations_location}}
-       {{item.recommendations_category}} {{item.recommendations_website}}</p>
+   <p> {{item.id}} {{item.recommendation_name}} {{item.recommendation_location}}
+       {{item.recommendation_category}} {{item.recommendation_website}}</p>
 {% endfor %}
     <br>
     {{ message }}
 </div>
+</section>
 
 {% endblock %}
 
