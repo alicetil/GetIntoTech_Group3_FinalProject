@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Your Recommendations{% endblock %}
+<!--list of all recommended-->
+
+{% block content %}
+<!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
+
+
+<h2> YOUR RECOMMENDATIONS! </h2>
+
+
+<!--we'll have to display a pic with that item too...?-->
+<div>
+{% for item in recommendations %}
+   <p>{{item.id}} {{item.recommendations_name}} {{item.recommendations_location}}
+       {{item.recommendations_category}} {{item.recommendations_website}}</p>
+{% endfor %}
+    <br>
+    {{ message }}
+</div>
+
+{% endblock %}
+
+<!--this page is equivalent to hero.html-->
