@@ -1,6 +1,7 @@
 from application import db
 from dataclasses import dataclass
 
+
 @dataclass
 class OutdoorActivities(db.Model):
     id : int

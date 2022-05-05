@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, jsonify, request
 
 from application import service, app
 from application.domain.recommendations import Recommendations
+from application.domain.restaurants import Restaurants
 from application.forms.recommendationsForm import RecommendForm
 
 
@@ -11,7 +12,7 @@ def home():
     # return "<h1>Testing this home page route</h1>"
     return render_template("home.html")
 
-#
+
 # @app.route('/placestoeat')
 # def places_to_eat():
 #     # return "<h1>Places to eat page </h1>"
@@ -88,7 +89,7 @@ def discounts():
     return render_template("discounts.html")
 
 
-# gggggggggggggggg
+# gggggggggggggggggggggggggggggggggggggggggggggggg
 # to replace below with relevant route pages:
 
 @app.route('/placestoeat', methods=['GET'])
@@ -137,3 +138,13 @@ def explore_the_outdoors():
     return render_template("exploretheoutdoors.html", outdoors=outdoors, message=error)
 
 
+
+
+# # GIT MERGE ISSUES: IGNORE REPEATED CODE BELOW
+
+#
+# @app.route('/placestoeat', methods=['GET'])
+# def places_to_eat():
+#     error = ""
+#     restaurants = service.get_all_restaurants()
+#     return render_template("placestoeat.html", restaurants=restaurants, message=error)

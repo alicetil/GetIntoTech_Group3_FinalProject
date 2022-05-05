@@ -3,6 +3,7 @@ from datetime import datetime
 from application import db
 from dataclasses import dataclass
 
+
 @dataclass
 class LocalEvents(db.Model):
     id : int

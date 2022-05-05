@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 # the annotation below will help to turn the Python object into a JSON object
 
+
 @dataclass
 class Restaurants(db.Model):
     id: int
@@ -26,3 +27,6 @@ class Restaurants(db.Model):
     restaurant_cuisine_type = db.Column(db.String(100), nullable=False)
     restaurant_dietary_options = db.Column(db.String(100), nullable=True)
     restaurant_affordability = db.Column(db.String(100), nullable=False)
+
+
+# column restaurant_affordability has both str and int ...may be what is causing the error...

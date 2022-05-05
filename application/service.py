@@ -30,6 +30,8 @@ def get_recommendation_by_id(recommendation_id):
 
 # for places to eat page
 
+# RESTAURANTS
+
 def get_all_restaurants():
     # alternatively, the db object from application may be used
     # heroes = db.session.query(Heroes)
@@ -40,8 +42,8 @@ def get_all_restaurants():
 def get_restaurant_by_id(restaurants_id):
     if restaurants_id > 0:
         return Restaurants.query.get(restaurants_id)
-    else:
-        return None
+
+    return Restaurants.query.all()
 
 
 
@@ -90,3 +92,8 @@ def get_outdoor_activity_by_id(outdoor_id):
         return OutdoorActivities.query.get(outdoor_id)
     else:
         return None
+
+# 1st create functions in services.py
+# 2nd updates routes function for get method + to include service.py function
+# 3rd update jinja template
+
