@@ -36,7 +36,7 @@ def get_all_restaurants():
     # alternatively, the db object from application may be used
     # heroes = db.session.query(Heroes)
     # return heroes
-    return Recommendations.query.all()
+    return Restaurants.query.all()
 
 
 def get_restaurant_by_id(restaurants_id):

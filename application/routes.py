@@ -102,6 +102,7 @@ def places_to_eat():
     return render_template("placestoeat.html", restaurants=restaurants, message=error)
 
 
+
 @app.route('/intothecitycentre', methods=['GET'])
 def into_city_centre():
     # return "<h1>Explore the city centre page</h1>"

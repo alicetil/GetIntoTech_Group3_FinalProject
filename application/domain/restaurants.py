@@ -15,7 +15,7 @@ class Restaurants(db.Model):
     restaurant_description: str
     restaurant_cuisine_type: str
     restaurant_dietary_options: str
-    restaurant_affordability: str
+    restaurant_affordablity: str
 
     id = db.Column(db.Integer, primary_key=True)
     restaurant_name = db.Column(db.String(100), nullable=False)
@@ -26,7 +26,7 @@ class Restaurants(db.Model):
     restaurant_description = db.Column(db.String(1000), nullable=True)
     restaurant_cuisine_type = db.Column(db.String(100), nullable=False)
     restaurant_dietary_options = db.Column(db.String(100), nullable=True)
-    restaurant_affordability = db.Column(db.String(100), nullable=False)
+    restaurant_affordablity = db.Column(db.String(100), nullable=False)
 
 
 # column restaurant_affordability has both str and int ...may be what is causing the error...
