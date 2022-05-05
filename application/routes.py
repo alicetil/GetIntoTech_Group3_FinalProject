@@ -11,11 +11,11 @@ def home():
     # return "<h1>Testing this home page route</h1>"
     return render_template("home.html")
 
-
-@app.route('/placestoeat')
-def places_to_eat():
-    # return "<h1>Places to eat page </h1>"
-    return render_template("placestoeat.html")
+#
+# @app.route('/placestoeat')
+# def places_to_eat():
+#     # return "<h1>Places to eat page </h1>"
+#     return render_template("placestoeat.html")
 
 
 @app.route('/exploretheoutdoors')
@@ -24,10 +24,10 @@ def explore_the_outdoors():
     return render_template("exploretheoutdoors.html")
 
 
-@app.route('/intothecitycentre')
-def into_city_centre():
-    # return "<h1>Explore the city centre page</h1>"
-    return render_template("intothecitycentre.html")
+# @app.route('/intothecitycentre')
+# def into_city_centre():
+#     # return "<h1>Explore the city centre page</h1>"
+#     return render_template("intothecitycentre.html")
 
 
 @app.route('/localevents')
@@ -88,7 +88,26 @@ def discounts():
     return render_template("discounts.html")
 
 
+# gggggggggggggggg
+# to replace below with relevant route pages:
+
+@app.route('/placestoeat', methods=['GET'])
+def places_to_eat():
+    # return "<h1>Places to eat page </h1>"
+    error = ""
+    restaurants = service.get_all_restaurants()
+    if len(restaurants) == 0:
+        error = "There are no restaurants to display. Watch this space!"
+    return render_template("placestoeat.html", restaurants=restaurants, message=error)
 
 
+@app.route('/intothecitycentre', methods=['GET'])
+def into_city_centre():
+    # return "<h1>Explore the city centre page</h1>"
+    error = ""
+    cityevents = service.get_all_city_events()
 
+    if len(cityevents) == 0:
+        error = "There are no city centre events to display yet. Watch this space!"
+    return render_template("intothecitycentre.html", cityevents=cityevents, message=error)
 

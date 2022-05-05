@@ -41,6 +41,21 @@ With plenty of places to eat in Sky Osterley campus itself, you'd be surprised w
     </body>
 
 
+<!--Knocking out a jinja experiment:-->
+<!--atm only showing 6 id numbers, nothing else -->
+<div>
+{% for item in restaurants %}
+   <p> {{item.id}} {{item.restaurant_name}} {{item.restaurant_location}}
+       {{item.restaurant_cuisine_type}} {{item.restaurant_website}}</p>
+{% endfor %}
+    <br>
+    {{ message }}
+</div>
+
+
+
+
+
 
 <!--    New layout with margins on the card deck-->
 

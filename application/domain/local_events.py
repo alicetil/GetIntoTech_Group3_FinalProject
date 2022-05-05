@@ -1,8 +1,10 @@
+from datetime import datetime
+
 from application import db
 from dataclasses import dataclass
 
 @dataclass
-class local_events(db.Model):
+class LocalEvents(db.Model):
     id : int
     event_name: str
     event_location: str
