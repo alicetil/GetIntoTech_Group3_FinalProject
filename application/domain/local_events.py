@@ -6,7 +6,7 @@ from dataclasses import dataclass
 
 @dataclass
 class LocalEvents(db.Model):
-    id : int
+    id: int
     event_name: str
     event_location: str
     event_start_date: datetime
