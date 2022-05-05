@@ -16,7 +16,7 @@ class LocalEvents(db.Model):
     event_category: str
 
     id = db.Column(db.Integer, primary_key=True)
-    event_name= db.Column(db.String(100),nullable=False)
+    event_name = db.Column(db.String(100),nullable=False)
     event_location = db.Column(db.String(1000),nullable=False)
     event_start_date = db.Column(db.DateTime(100),nullable=True)
     event_end_date = db.Column(db.DateTime(100),nullable=True)

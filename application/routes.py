@@ -123,8 +123,8 @@ def local_events():
     localevents = service.get_all_local_events()
 
     if len(localevents) == 0:
-        error = "There are no city centre events to display yet. Watch this space!"
-    return render_template("intothecitycentre.html", localevents=localevents, message=error)
+        error = "There are no local events to display yet. Watch this space!"
+    return render_template("localevents.html", localevents=localevents, message=error)
 
 
 
