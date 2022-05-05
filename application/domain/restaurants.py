@@ -15,6 +15,7 @@ class Restaurants(db.Model):
     restaurant_cuisine_type: str
     restaurant_dietary_options: str
     restaurant_affordability: str
+    restaurant_discount: str
 
     id = db.Column(db.Integer, primary_key=True)
     restaurant_name = db.Column(db.String(100), nullable=False)
@@ -26,3 +27,4 @@ class Restaurants(db.Model):
     restaurant_cuisine_type = db.Column(db.String(100), nullable=False)
     restaurant_dietary_options = db.Column(db.String(100), nullable=True)
     restaurant_affordability = db.Column(db.String(100), nullable=False)
+    restaurant_discount = db.Column(db.String(100), nullable=False)
