@@ -114,20 +114,6 @@ def into_city_centre():
     return render_template("intothecitycentre.html", cityevents=cityevents, message=error)
 
 
-# ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-
-
-
-@app.route('/placestoeat', methods=['GET'])
-def places_to_eat():
-    error = ""
-    restaurants = service.get_all_restaurants()
-    return render_template("placestoeat.html", restaurants=restaurants, message=error)
-
-
-
-
-
 
 
 @app.route('/localevents', methods=['GET'])
@@ -163,3 +149,12 @@ def explore_the_outdoors():
 #     error = ""
 #     restaurants = service.get_all_restaurants()
 #     return render_template("placestoeat.html", restaurants=restaurants, message=error)
+
+
+#
+# @app.route('/placestoeat', methods=['GET'])
+# def places_to_eat():
+#     error = ""
+#     restaurants = service.get_all_restaurants()
+#     return render_template("placestoeat.html", restaurants=restaurants, message=error)
+#
