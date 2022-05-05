@@ -143,3 +143,47 @@ update into_london set london_discount = "10% off - redeem online with code SKYD
 update into_london set london_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=8;
 
 alter table recommendations modify column recommendation_website varchar (1000);
+
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/tigerlily.jpeg" where id=1;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=2;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=3;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=4;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=5;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=6;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=7;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=8;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=9;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=10;
+
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/osterley house.jpeg" where id=1;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/syon park.jpeg" where id=2;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/hanwell zoo.jpeg" where id=3;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/kew gardens.jpeg" where id=4;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/puttstarts.jpeg" where id=5;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/merry peddler.jpeg" where id=6;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/paddle.jpeg" where id=7;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/twickenham.jpeg" where id=8;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/rugby museum.jpeg" where id=9;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/tate britain.jpeg" where id=10;
+
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/pub in park.jpeg" where id=1;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/junction.jpeg" where id=2;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/xmas at kew.jpeg" where id=3;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/food festival.jpeg" where id=4;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/enchanted woodland.jpeg" where id=5;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/hogarth house.jpeg" where id=6;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/pub icomedy.jpeg" where id=7;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/waterworks.jpeg" where id=8;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/duckpond.jpeg" where id=9;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/outdoor theatre.jpeg" where id=10;
+
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/bar elba.jpeg" where id=1;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/navtar.jpeg" where id=2;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/healing comedy.jpeg" where id=3;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/boroughmarket.jpeg" where id=4;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/shard.jpeg" where id=5;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=6;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=7;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=8;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=9;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=10;
