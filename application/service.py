@@ -66,7 +66,7 @@ def get_all_outdoor_activities():
     return outdoor_activities.query.all()
 
 def get_outdoor_activity_by_id(outdoor_id):
-    if outdoor_is >0:
+    if outdoor_id >0:
         return outdoor_activities.query.get(outdoor_id)
     else:
         return None
