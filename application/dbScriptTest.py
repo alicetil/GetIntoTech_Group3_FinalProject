@@ -43,10 +43,10 @@ for x in recommendation.recommendation_location:
 
 
 # below displays content from our restaurants' table in sql (it works)
-with engine.connect() as conn:
-    result = conn.execute(text("select * from restaurants"))
-    for row in result:
-        print(row)
+# with engine.connect() as conn:
+#     result = conn.execute(text("select * from restaurants"))
+#     for row in result:
+#         print(row)
 
 
 
