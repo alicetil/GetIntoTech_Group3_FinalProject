@@ -19,22 +19,22 @@ def home():
 #     return render_template("placestoeat.html")
 
 
-@app.route('/exploretheoutdoors')
-def explore_the_outdoors():
-    # return "<h1>Explore the outdoors page</h1>"
-    return render_template("exploretheoutdoors.html")
+# @app.route('/exploretheoutdoors')
+# def explore_the_outdoors():
+#     # return "<h1>Explore the outdoors page</h1>"
+#     return render_template("exploretheoutdoors.html")
 
 
-@app.route('/intothecitycentre')
-def into_city_centre():
-    # return "<h1>Explore the city centre page</h1>"
-    return render_template("intothecitycentre.html")
+# @app.route('/intothecitycentre')
+# def into_city_centre():
+#     # return "<h1>Explore the city centre page</h1>"
+#     return render_template("intothecitycentre.html")
 
 
-@app.route('/localevents')
-def local_events():
-    # return "<h1>Explore the local events page</h1>"
-    return render_template("localevents.html")
+# @app.route('/localevents')
+# def local_events():
+#     # return "<h1>Explore the local events page</h1>"
+#     return render_template("localevents.html")
 
 
 @app.route('/recommendations', methods=['GET','POST'])
@@ -89,6 +89,29 @@ def discounts():
     return render_template("discounts.html")
 
 
+# gggggggggggggggggggggggggggggggggggggggggggggggg
+# to replace below with relevant route pages:
+
+@app.route('/placestoeat', methods=['GET'])
+def places_to_eat():
+    # return "<h1>Places to eat page </h1>"
+    error = ""
+    restaurants = service.get_all_restaurants()
+    if len(restaurants) == 0:
+        error = "There are no restaurants to display. Watch this space!"
+    return render_template("placestoeat.html", restaurants=restaurants, message=error)
+
+
+
+@app.route('/intothecitycentre', methods=['GET'])
+def into_city_centre():
+    # return "<h1>Explore the city centre page</h1>"
+    error = ""
+    cityevents = service.get_all_city_events()
+
+    if len(cityevents) == 0:
+        error = "There are no city centre events to display yet. Watch this space!"
+    return render_template("intothecitycentre.html", cityevents=cityevents, message=error)
 
 
 # ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -107,3 +130,36 @@ def places_to_eat():
 
 
 
+@app.route('/localevents', methods=['GET'])
+def local_events():
+    # return "<h1>Explore the city centre page</h1>"
+    error = ""
+    localevents = service.get_all_local_events()
+
+    if len(localevents) == 0:
+        error = "There are no local events to display yet. Watch this space!"
+    return render_template("localevents.html", localevents=localevents, message=error)
+
+
+
+@app.route('/exploretheoutdoors', methods=['GET'])
+def explore_the_outdoors():
+    # return "<h1>Explore the outdoors page</h1>"
+    error = ""
+    outdoors = service.get_all_local_events()
+
+    if len(outdoors) == 0:
+        error = "There are no city centre events to display yet. Watch this space!"
+    return render_template("exploretheoutdoors.html", outdoors=outdoors, message=error)
+
+
+
+
+# # GIT MERGE ISSUES: IGNORE REPEATED CODE BELOW
+
+#
+# @app.route('/placestoeat', methods=['GET'])
+# def places_to_eat():
+#     error = ""
+#     restaurants = service.get_all_restaurants()
+#     return render_template("placestoeat.html", restaurants=restaurants, message=error)

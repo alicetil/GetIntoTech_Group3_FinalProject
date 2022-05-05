@@ -7,6 +7,17 @@
 {% block content %}
 <!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
 
+<!--IT'S WORKING-->
+<!--<div>-->
+<!--{% for item in restaurants %}-->
+<!--   <p> {{item.id}} {{item.restaurant_name}} {{item.restaurant_location}}-->
+<!--       {{item.restaurant_cuisine_type}} {{item.restaurant_website}}</p>-->
+<!--{% endfor %}-->
+<!--    <br>-->
+<!--    {{ message }}-->
+<!--</div>-->
+
+
 
 <div>
 {% for item in restaurants %}
@@ -53,6 +64,7 @@ With plenty of places to eat in Sky Osterley campus itself, you'd be surprised w
 
 
 
+
 <!--    New layout with margins on the card deck-->
 
     <div class="container-fluid">
@@ -69,7 +81,7 @@ With plenty of places to eat in Sky Osterley campus itself, you'd be surprised w
                         <li class="list-group-item">{{restaurant.restaurant_cuisine_type}}</li>
                         <li class="list-group-item">{{restaurant.restaurant_dietary_options}}</li>
                         <li class="list-group-item">{{restaurant.restaurant_location}} </li>
-                        <li class="list-group-item">{{restaurant.restaurant_affordability}} </li>
+                        <li class="list-group-item">{{restaurant.restaurant_affordablity}} </li>
                       </ul>
                          {% endfor %}
                     </div>

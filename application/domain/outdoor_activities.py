@@ -1,11 +1,12 @@
 from application import db
 from dataclasses import dataclass
 
+
 @dataclass
-class outdoor_activities(db.Model):
+class OutdoorActivities(db.Model):
     id : int
     outdoor_name: str
-    outdoor_addres: str
+    outdoor_address: str
     outdoor_website: str
     #outdoor_image : imghdr
     outdoor_descriptions: str
