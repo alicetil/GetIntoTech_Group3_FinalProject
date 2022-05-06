@@ -71,10 +71,10 @@ With plenty of places to eat in Sky Osterley campus itself, you'd be surprised w
         <div class="card-deck">
 <!--                   Card 1 -->
                 <div class ="card">
-                    <img class="card-img-top" src="static/images/tigerlily.jpeg" alt="Tiger Lily Restaurant">
+                    {% for restaurant in restaurants %}
+                    <img class="card-img-top" src={restaurant.restaurant_image} alt="Tiger Lily Restaurant">
                     <div class="card-body">
                         <a class="btn btn-primary" href={restaurants.restaurant_website} role="button">Click Here</a>
-                        {% for restaurant in restaurants %}
                       <h5 class="card-title">{{restaurant.restaurant_name}}</h5>
                       <p class="card-text">{{restaurant.restaurant_description}}</p>
                       <ul class="list-group list-group-flush">

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="749b8b14-a43d-4b9f-b2b4-0f34589e3baa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/domain/restaurants.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/restaurants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/templates/placestoeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/placestoeat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../PycharmProjects/FinalProject2022/venv/bin/python" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
