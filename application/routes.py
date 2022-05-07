@@ -5,36 +5,14 @@ from application.domain.recommendations import Recommendations
 from application.domain.restaurants import Restaurants
 from application.forms.recommendationsForm import RecommendForm
 
+# try and import what you need- to make it easier
+# from application.service import get_all_outdoor_activities,
 
 
 @app.route('/')
 def home():
     # return "<h1>Testing this home page route</h1>"
     return render_template("home.html")
-
-
-# @app.route('/placestoeat')
-# def places_to_eat():
-#     # return "<h1>Places to eat page </h1>"
-#     return render_template("placestoeat.html")
-
-
-# @app.route('/exploretheoutdoors')
-# def explore_the_outdoors():
-#     # return "<h1>Explore the outdoors page</h1>"
-#     return render_template("exploretheoutdoors.html")
-
-
-# @app.route('/intothecitycentre')
-# def into_city_centre():
-#     # return "<h1>Explore the city centre page</h1>"
-#     return render_template("intothecitycentre.html")
-
-
-# @app.route('/localevents')
-# def local_events():
-#     # return "<h1>Explore the local events page</h1>"
-#     return render_template("localevents.html")
 
 
 @app.route('/recommendations', methods=['GET','POST'])
@@ -68,14 +46,15 @@ def add_recommendations():
     return render_template('recommendations.html', form=form, message=error)
 
 
-@app.route('/list', methods=['GET'])
-def show_recomm_list():
-    # return "<h1>Recommendations List Page</h1>"
-    error = ""
-    recommendations = service.get_all_recommendations()
-    if len(recommendations) == 0:
-        error = "There are no recommendations to display. Do add one!"
-    return render_template("list_recommendations.html", recommendations=recommendations, message=error)
+# @app.route('/list', methods=['GET'])
+# def show_recomm_list():
+#     # return "<h1>Recommendations List Page</h1>"
+#     error = ""
+#     recommendations = service.get_all_recommendations()
+#     if len(recommendations) == 0:
+#         error = "There are no recommendations to display. Do add one!"
+#     return render_template("list_recommendations.html", recommendations=recommendations, message=error)
+
 
 @app.route('/contact')
 def contact():
@@ -89,72 +68,64 @@ def discounts():
     return render_template("discounts.html")
 
 
-# gggggggggggggggggggggggggggggggggggggggggggggggg
-# to replace below with relevant route pages:
+# -----------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------
+# Replacing below with relevant route pages - exception handling:
+
 
 @app.route('/placestoeat', methods=['GET'])
 def places_to_eat():
-    # return "<h1>Places to eat page </h1>"
-    error = ""
-    restaurants = service.get_all_restaurants()
-    if len(restaurants) == 0:
-        error = "There are no restaurants to display. Watch this space!"
-    return render_template("placestoeat.html", restaurants=restaurants, message=error)
+    try:
+        restaurants = service.get_all_restaurants()
+        return render_template("placestoeat.html", restaurants=restaurants)
+    except Exception as err:
+        return render_template("placestoeat.html", message=f"There are no restaurants to display. Watch this space!: {err}")
+        # return render_template("placestoeat.html", message=f"Failed to fetch Restaurants List due to error: {err}")
 
 
 
 @app.route('/intothecitycentre', methods=['GET'])
 def into_city_centre():
-    # return "<h1>Explore the city centre page</h1>"
-    error = ""
-    cityevents = service.get_all_city_events()
+    try:
+        cityevents = service.get_all_city_events()
 
-    if len(cityevents) == 0:
-        error = "There are no city centre events to display yet. Watch this space!"
-    return render_template("intothecitycentre.html", cityevents=cityevents, message=error)
-
+        return render_template("intothecitycentre.html", cityevents=cityevents)
+    except Exception as err:
+        return render_template("intothecitycentre.html", message=f"There are no city centre events to display yet. Watch this space!: {err}")
 
 
 
 @app.route('/localevents', methods=['GET'])
 def local_events():
-    # return "<h1>Explore the city centre page</h1>"
-    error = ""
-    localevents = service.get_all_local_events()
+    try:
+        localevents = service.get_all_local_events()
 
-    if len(localevents) == 0:
-        error = "There are no local events to display yet. Watch this space!"
-    return render_template("localevents.html", localevents=localevents, message=error)
+        return render_template("localevents.html", localevents=localevents)
+    except Exception as err:
+        return render_template("localevents.html", message=f"Failed to fetch Local Events: {err}")
 
 
 
 @app.route('/exploretheoutdoors', methods=['GET'])
 def explore_the_outdoors():
-    # return "<h1>Explore the outdoors page</h1>"
+    try:
+        outdoors = service.get_all_outdoor_activities()
+
+        # outdoors_dict = [x.__dict__ for x in outdoors ]  outdoors=outdoors_dict
+
+        return render_template("exploretheoutdoors.html", outdoors=outdoors)
+    except Exception as err:
+        return render_template("exploretheoutdoors.html", message=f"Failed to fetch Outdoor Activities: {err}")
+
+
+
+# NEXT RECCOMENDATIONS PAGE FOR EXEPTION BLOCK:
+@app.route('/list', methods=['GET'])
+def show_recomm_list():
+    # return "<h1>Recommendations List Page</h1>"
     error = ""
-    outdoors = service.get_all_local_events()
+    recommendations = service.get_all_recommendations()
+    if len(recommendations) == 0:
+        error = "There are no recommendations to display. Do add one!"
+    return render_template("list_recommendations.html", recommendations=recommendations, message=error)
 
-    if len(outdoors) == 0:
-        error = "There are no city centre events to display yet. Watch this space!"
-    return render_template("exploretheoutdoors.html", outdoors=outdoors, message=error)
-
-
-
-
-# # GIT MERGE ISSUES: IGNORE REPEATED CODE BELOW
-
-#
-# @app.route('/placestoeat', methods=['GET'])
-# def places_to_eat():
-#     error = ""
-#     restaurants = service.get_all_restaurants()
-#     return render_template("placestoeat.html", restaurants=restaurants, message=error)
-
-
-#
-# @app.route('/placestoeat', methods=['GET'])
-# def places_to_eat():
-#     error = ""
-#     restaurants = service.get_all_restaurants()
-#     return render_template("placestoeat.html", restaurants=restaurants, message=error)
-#
