@@ -21,3 +21,4 @@ class OutdoorActivities(db.Model):
     outdoor_descriptions =db.Column(db.String(1000),nullable =True)
     outdoor_affordability = db.Column(db.String(1000),nullable =True)
     outdoor_discount = db.Column(db.String(100),nullable =True)
+

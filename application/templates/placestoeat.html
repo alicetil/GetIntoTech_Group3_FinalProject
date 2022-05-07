@@ -113,6 +113,16 @@ With plenty of places to eat in Sky Osterley campus itself, you'd be surprised w
                       <h5 class="card-title">Tiger Lily</h5>
                         <a class="btn btn-primary" href="https://www.tigerlilyofosterley.co.uk/" role="button">Click Here</a>
                       <p class="card-text">Delicious authentic Thai cuisine with a bar. A peaceful elegant restaurant with bamboo outdoor terrance.</p>
+=======
+<!--                   Card 1 -->
+                <div class ="card">
+                    {% for restaurant in restaurants %}
+                    <img class="card-img-top" src={restaurant.restaurant_image} alt="Restaurant image">
+                    <div class="card-body">
+                        <a class="btn btn-primary" href={restaurants.restaurant_website} role="button">Click Here</a>
+                      <h5 class="card-title">{{restaurant.restaurant_name}}</h5>
+                      <p class="card-text">{{restaurant.restaurant_description}}</p>
+>>>>>>> origin
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">Thai</li>
                         <li class="list-group-item">jdjdjdjd</li>
