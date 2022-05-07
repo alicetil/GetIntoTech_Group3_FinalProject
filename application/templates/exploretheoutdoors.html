@@ -8,8 +8,8 @@
 <!--<h2> INTO THE CITY CENTRE table example!</h2>-->
 <!--    code not showing--sth wrong with template-->
 <div>
-{% for item in outdoor_activities %}
-   <p>{{ item.id }} {{ item.outdoor_name }} {{ item.outdoor_location }}
+{% for item in outdoors %}
+   <p>{{ item.id }} {{ item.outdoor_name }} {{ item.outdoor_address }}
        {{ item.outdoor_descriptions }} {{ item.outdoor_website }}</p>
 {% endfor %}
     <br>

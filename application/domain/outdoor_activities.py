@@ -14,10 +14,10 @@ class OutdoorActivities(db.Model):
     outdoor_discount: str
 
     id = db.Column(db.Integer, primary_key = True)
-    outdoor_name = db.Column(db.String(100),nullable =False)
-    outdoor_address = db.Column(db.String(1000),nullable =False)
-    outdoor_website = db.Column(db.String(100),nullable =False)
+    outdoor_name = db.Column(db.String(100), nullable =False)
+    outdoor_address = db.Column(db.String(1000), nullable =False)
+    outdoor_website = db.Column(db.String(100), nullable =False)
     #outdoor_image
-    outdoor_descriptions =db.Column(db.String(1000),nullable =True)
-    outdoor_affordability = db.Column(db.String(1000),nullable =True)
-    outdoor_discount = db.Column(db.String(100),nullable =True)
+    outdoor_descriptions =db.Column(db.String(1000), nullable =True)
+    outdoor_affordability = db.Column(db.String(1000), nullable =True)
+    outdoor_discount = db.Column(db.String(100), nullable =True)

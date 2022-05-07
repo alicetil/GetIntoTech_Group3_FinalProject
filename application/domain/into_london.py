@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 @dataclass
 class IntoLondon(db.Model):
-    id : int
+    id: int
     london_name: str
     london_location: str
     london_travel: str

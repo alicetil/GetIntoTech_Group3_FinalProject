@@ -132,7 +132,7 @@ def local_events():
 def explore_the_outdoors():
     # return "<h1>Explore the outdoors page</h1>"
     error = ""
-    outdoors = service.get_all_local_events()
+    outdoors = service.get_all_outdoor_activities()
 
     if len(outdoors) == 0:
         error = "There are no city centre events to display yet. Watch this space!"
