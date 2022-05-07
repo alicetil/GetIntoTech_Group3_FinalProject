@@ -110,7 +110,7 @@ def local_events():
 def explore_the_outdoors():
     try:
         outdoors = service.get_all_outdoor_activities()
-        print(outdoors)
+        # print(outdoors)
 
         # outdoors_dict = [x.__dict__ for x in outdoors ]  outdoors=outdoors_dict
 
