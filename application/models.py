@@ -1,6 +1,6 @@
 from service import get_all_outdoor_activities
 
-print(get_all_outdoor_activities())
+#print(get_all_outdoor_activities())
 
 
 # [OutdoorActivities(id=1, outdoor_name='National Trust - Osterely Park and House', outdoor_address='Jersey Rd, Isleworth TW7 4RB, United Kingdom',
