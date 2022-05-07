@@ -129,3 +129,4 @@ def show_recomm_list():
         error = "There are no recommendations to display. Do add one!"
     return render_template("list_recommendations.html", recommendations=recommendations, message=error)
 
+# branch 7thmaywork
