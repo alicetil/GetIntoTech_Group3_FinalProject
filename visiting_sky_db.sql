@@ -168,7 +168,7 @@ UPDATE outdoor_activities SET outdoor_image="10.jpeg" where id=10;
 update restaurants set restaurant_website = "https://tigerlilyofosterley.co.uk/" where id=1;
 update restaurants set restaurant_website = "https://hareandhoundsosterley.co.uk/" where id=2;
 update restaurants set restaurant_website = "https://terminal6lounge.com/" where id=3;
-update restaurants set restaurant_website = "https://saharagrill.co.uk/branches/saharagrillhounslowk/" where id=4;
+update restaurants set restaurant_website = "https://www.saharagrill.co.uk/" where id=4;
 update restaurants set restaurant_website = "https://manvsfoodlondon.co.uk/" where id=5;
 update restaurants set restaurant_website = "https://vegologyldn.com/" where id=6;
 update restaurants set restaurant_website = "https://farfeshlounge.co.uk/" where id=7;
