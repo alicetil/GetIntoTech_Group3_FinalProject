@@ -119,7 +119,7 @@ def explore_the_outdoors():
         return render_template("exploretheoutdoors.html", message=f"Failed to fetch Outdoor Activities: {err}")
 
 
-# NEXT RECCOMENDATIONS PAGE FOR EXEPTION BLOCK:
+# NEXT RECOMMENDATIONS AKA LIST PAGE FOR EXCEPTION BLOCK:
 @app.route('/list', methods=['GET'])
 def show_recomm_list():
     # return "<h1>Recommendations List Page</h1>"

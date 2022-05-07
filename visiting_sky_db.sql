@@ -163,3 +163,37 @@ UPDATE outdoor_activities SET outdoor_image="8.jpeg" where id=8;
 UPDATE outdoor_activities SET outdoor_image="9.jpeg" where id=9;
 UPDATE outdoor_activities SET outdoor_image="10.jpeg" where id=10;
 
+ -- updating restaurant websites to start with https:  otherwise it won't be picked up by jinja template
+ 
+update restaurants set restaurant_website = "https://tigerlilyofosterley.co.uk/" where id=1;
+update restaurants set restaurant_website = "https://hareandhoundsosterley.co.uk/" where id=2;
+update restaurants set restaurant_website = "https://terminal6lounge.com/" where id=3;
+update restaurants set restaurant_website = "https://saharagrill.co.uk/branches/saharagrillhounslowk/" where id=4;
+update restaurants set restaurant_website = "https://manvsfoodlondon.co.uk/" where id=5;
+update restaurants set restaurant_website = "https://vegologyldn.com/" where id=6;
+update restaurants set restaurant_website = "https://farfeshlounge.co.uk/" where id=7;
+update restaurants set restaurant_website = "https://www.creamscafe.co.uk/" where id=8;
+update restaurants set restaurant_website = "https://www.niralafoods.com/" where id=10;
+
+select * from restaurants;
+select * from restaurants;
+select * from outdoor_activities;
+select * from local_events;
+select * from into_london;
+select * from recommendations;
+
+-- need to update id 4 to a non duplicated event/place on recommendations table (same as id 1)
+-- also add discounts...it's coming up as null on website (amended Rform class to stringfield..) 
+
+update recommendations set recommendation_website = "https://cookingwithmonisha.com/" where id=5;
+update recommendations set recommendation_website = "https://www.nationaltrust.org.uk/osterley-park-and-house/features/osterley-national-trust-cafe/" where id=1;
+update recommendations set recommendation_website = "https://www.nationaltrust.org.uk/osterley-park-and-house/features/osterley-national-trust-cafe/" where id=4;
+
+
+
+
+
+
+
+
+

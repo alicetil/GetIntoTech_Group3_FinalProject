@@ -14,7 +14,7 @@
 <br>
 <div class="container-fluid">
  <div class="text-center">
-     <div class="display-1"<h4>Recommend Away</h4>
+     <div class="display-1"<h1>Recommend Away</h1>
 </div>
 <br>
 <!--intro info code-->
@@ -38,11 +38,6 @@ With plenty of places to do around Sky Osterley campus itself, is there a place 
 
 
 
-
-<!--This page has the form for users to input their recommended places-->
-<!-- recommendation_whatever is located in the Class we created for the recommendation form. Now we're creating
-a form to have those 'schemas' or columns added into our form database. same thing also found in the route page for
-add_recommendations() function in it's if statement variable names-->
 <section>
 <div class='container-fluid' style="width:50%">
     <form></form>
@@ -52,45 +47,46 @@ add_recommendations() function in it's if statement variable names-->
         {{ form.csrf_token }}
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_name.label (class_="form-label") }}</div>
+<!--       changed div class for form-label from col-md-2 to col-md-9 (so words stop displaving on top of each other): e.g. <div class="col-md-9">{{ form.recommendation_website.label (class_="form-label") }}</div>  -->
+                <div class="col-md-9">{{ form.recommendation_name.label (class_="form-label") }}</div>
                 <div class="col-md-10">{{ form.recommendation_name (class_="form-control", size =32)}}</div>
             </div>
         </div>
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_description.label(class_="form-label")}}</div>
+                <div class="col-md-9">{{ form.recommendation_description.label(class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_description(class_="form-control", size =32)}}</div>
             </div>
         </div>
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_location.label (class_="form-label")}}</div>
+                <div class="col-md-9">{{ form.recommendation_location.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_location (class_="form-control", size =32) }}</div>
             </div>
         </div>
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_website.label (class_="form-label") }}</div>
+                <div class="col-md-9">{{ form.recommendation_website.label (class_="form-label") }}</div>
                 <div class="col-md-10">{{ form.recommendation_website(class_="form-control", size =32) }}</div>
             </div>
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_category.label (class_="form-label")}}</div>
+                <div class="col-md-9">{{ form.recommendation_category.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_category (class_="form-control", size =32) }}</div>
             </div>
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_discount.label (class_="form-label")}}</div>
+                <div class="col-md-9">{{ form.recommendation_discount.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_discount (class_="form-control", size =32) }}</div>
             </div>
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.recommendation_author.label (class_="form-label")}}</div>
+                <div class="col-md-9">{{ form.recommendation_author.label (class_="form-label")}}</div>
                 <div class="col-md-10">{{ form.recommendation_author (class_="form-control", size =32) }}</div>
             </div>
         <div class="form-group">
             <div class = "mb-3">
-                <div class="col-md-2">{{ form.submit(class_="btn btn-primary mb-3") }}</div>
+                <div class="col-md-10">{{ form.submit(class_="btn btn-primary mb-3") }}</div>
             </div>
         </div>
         {{ message }}
