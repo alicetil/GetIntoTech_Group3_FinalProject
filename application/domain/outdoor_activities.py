@@ -8,7 +8,7 @@ class OutdoorActivities(db.Model):
     outdoor_name: str
     outdoor_address: str
     outdoor_website: str
-    outdoor_image : str
+    outdoor_image: str
     outdoor_descriptions: str
     outdoor_affordability: str
     outdoor_discount: str

@@ -40,6 +40,7 @@ create table outdoor_activities(
  outdoor_descriptions varchar(1000),
  outdoor_affordability varchar (100) not null);
  
+ 
 
 insert into outdoor_activities values (1 , 'National Trust - Osterely Park and House', 'Jersey Rd, Isleworth TW7 4RB, United Kingdom', 'https://www.nationaltrust.org.uk/osterley-park-and-house' , '', 'Stroll up the tree-lined drive, past the grazing Charolais cattle and you''d think you''re in the country, not urban Hounslow. Surrounded by gardens, park and farmland, Osterley is one of the last surviving country estates in London.',
 '£13 - £20 - Depending on ticket type');
@@ -143,3 +144,22 @@ update into_london set london_discount = "10% off - redeem online with code SKYD
 update into_london set london_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=8;
 
 alter table recommendations modify column recommendation_website varchar (1000);
+ 
+alter table outdoor_activities modify column outdoor_image varchar (1000);
+
+
+-- update outdoor_activities e SET outdoor_image=(select CONCAT(id, outdoor_name) from outdoor_activities where id=e.id);
+
+select * from outdoor_activities;
+
+UPDATE outdoor_activities SET outdoor_image="1.jpeg" where id=1;
+UPDATE outdoor_activities SET outdoor_image="2.jpeg" where id=2;
+UPDATE outdoor_activities SET outdoor_image="3.jpeg" where id=3;
+UPDATE outdoor_activities SET outdoor_image="4.jpeg" where id=4;
+UPDATE outdoor_activities SET outdoor_image="5.jpeg" where id=5;
+UPDATE outdoor_activities SET outdoor_image="6.jpeg" where id=6;
+UPDATE outdoor_activities SET outdoor_image="7.jpeg" where id=7;
+UPDATE outdoor_activities SET outdoor_image="8.jpeg" where id=8;
+UPDATE outdoor_activities SET outdoor_image="9.jpeg" where id=9;
+UPDATE outdoor_activities SET outdoor_image="10.jpeg" where id=10;
+

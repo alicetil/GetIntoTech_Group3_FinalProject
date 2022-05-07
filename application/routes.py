@@ -110,13 +110,13 @@ def local_events():
 def explore_the_outdoors():
     try:
         outdoors = service.get_all_outdoor_activities()
+        print(outdoors)
 
         # outdoors_dict = [x.__dict__ for x in outdoors ]  outdoors=outdoors_dict
 
         return render_template("exploretheoutdoors.html", outdoors=outdoors)
     except Exception as err:
         return render_template("exploretheoutdoors.html", message=f"Failed to fetch Outdoor Activities: {err}")
-
 
 
 # NEXT RECCOMENDATIONS PAGE FOR EXEPTION BLOCK:

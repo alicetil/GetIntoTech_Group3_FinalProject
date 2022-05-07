@@ -112,7 +112,14 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 <!--             </p>-->
     <!--       Card 2 -->
                 <div id={item.id} class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="static/images/{item.outdoor_image}" alt="Tree">
+                         <img class="card-img-top" src="{{ url_for('static',filename='images/{{item.outdoor_image}}' ) }} " alt="{{ item.outdoor_name }}">
+<!--                     <img class="card-img-top" src="{{ url_for('static/images/{{item.outdoor_image}}' ) }} " alt="{{ item.outdoor_name }}">-->
+<!--                     <img class="card-img-top" src="{{ url_for('static', filename='{{item.outdoor_image}}' ) }} " alt="jinja name">-->
+
+<!--                        working below: -->
+<!--                    <img class="card-img-top" src="{{ url_for('static', filename='images/roses.jpeg') }} " alt="jinja name">-->
+
+
                     <div class="card-body">
                       <h5 class="card-title">{{ item.outdoor_name }}</h5>
                         <a class="btn btn-primary" href={item.outdoor_website} role="button">Click Here</a>

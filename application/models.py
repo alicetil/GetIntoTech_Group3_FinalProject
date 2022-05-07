@@ -1,30 +1,10 @@
-# from application import db
-# # from . import db
-# from dataclasses import dataclass
-# from sqlalchemy.sql import func
-#
-#
-# # the annotation below will help to turn the Python object into a JSON object
-# @dataclass
-# class Restaurants(db.Model):
-#     id: int
-#     restaurant_name: str
-#     restaurant_address: str
-#     restaurant_location: str
-#     restaurant_website: str
-#     # restaurant_image:
-#     restaurant_description: str
-#     restaurant_cuisine_type: str
-#     restaurant_dietary_options: str
-#     restaurant_affordability: str
-#
-#     id = db.Column(db.Integer, primary_key=True)
-#     restaurant_name = db.Column(db.String(100), nullable=False)
-#     restaurant_address = db.Column(db.String(100), nullable=False)
-#     restaurant_location = db.Column(db.String(1000), nullable=True)
-#     restaurant_website = db.Column(db.String(100), nullable=True)
-#     # restaurant_image =
-#     restaurant_description = db.Column(db.String(1000), nullable=True)
-#     restaurant_cuisine_type = db.Column(db.String(100), nullable=False)
-#     restaurant_dietary_options = db.Column(db.String(100), nullable=True)
-#     restaurant_affordability = db.Column(db.String(100), nullable=False)
+from service import get_all_outdoor_activities
+
+print(get_all_outdoor_activities())
+
+
+# [OutdoorActivities(id=1, outdoor_name='National Trust - Osterely Park and House', outdoor_address='Jersey Rd, Isleworth TW7 4RB, United Kingdom',
+# outdoor_website='https://www.nationaltrust.org.uk/osterley-park-and-house', outdoor_image='1.jpeg',
+# outdoor_descriptions="Stroll up the tree-lined drive, past the grazing Charolais cattle and you'd think you're in the country, not urban Hounslow. "
+#                      "Surrounded by gardens, park and farmland, Osterley is one of the last surviving country estates in London.",
+#                    outdoor_affordability='£13 - £20 - Depending on ticket type', outdoor_discount='10% off - show Sky badge'),
