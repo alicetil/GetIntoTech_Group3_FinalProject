@@ -29,6 +29,7 @@ body {
 }
 .navbar-nav-primary {
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-form-search {
