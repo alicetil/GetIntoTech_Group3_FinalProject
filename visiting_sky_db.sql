@@ -143,3 +143,86 @@ update into_london set london_discount = "10% off - redeem online with code SKYD
 update into_london set london_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=8;
 
 alter table recommendations modify column recommendation_website varchar (1000);
+
+-- removed blob from images column and replacing with varchar(1000) for below tables :
+alter table outdoor_activities modify column outdoor_image varchar (1000);
+alter table restaurants modify column restaurant_image varchar (1000);
+alter table local_events modify column event_image varchar (1000);
+alter table into_london modify column london_image varchar (1000);
+
+
+-- update recommendations set recommendation_website = "https://cookingwithmonisha.com/" where id=5;
+-- update recommendations set recommendation_website = "https://www.nationaltrust.org.uk/osterley-park-and-house/features/osterley-national-trust-cafe/" where id=1;
+-- update recommendations set recommendation_website = "https://www.nationaltrust.org.uk/osterley-park-and-house/features/osterley-national-trust-cafe/" where id=4;
+
+-- --UPDATE LINKS
+
+update restaurants set restaurant_website = "https://tigerlilyofosterley.co.uk/" where id=1;
+update restaurants set restaurant_website = "https://hareandhoundsosterley.co.uk/" where id=2;
+update restaurants set restaurant_website = "https://terminal6lounge.com/" where id=3;
+update restaurants set restaurant_website = "https://www.saharagrill.co.uk/" where id=4;
+update restaurants set restaurant_website = "https://manvsfoodlondon.co.uk/" where id=5;
+update restaurants set restaurant_website = "https://vegologyldn.com/" where id=6;
+update restaurants set restaurant_website = "https://farfeshlounge.co.uk/" where id=7;
+update restaurants set restaurant_website = "https://www.creamscafe.co.uk/" where id=8;
+update restaurants set restaurant_website = "https://www.niralafoods.com/" where id=10;
+
+
+-- --IMAGES
+
+update restaurants set restaurant_image = "tigerlily.jpeg" where id=1;
+update restaurants set restaurant_image = "hare houn.jpeg" where id=2;
+update restaurants set restaurant_image = "terminal6.jpeg" where id=3;
+update restaurants set restaurant_image = "sahara.jpeg" where id=4;
+update restaurants set restaurant_image = "mans vs.jpeg" where id=5;
+update restaurants set restaurant_image = "vegology.jpeg" where id=6;
+update restaurants set restaurant_image = "farfresh.jpeg" where id=7;
+update restaurants set restaurant_image = "creams.jpeg" where id=8;
+update restaurants set restaurant_image = "heavenly.jpeg" where id=9;
+update restaurants set restaurant_image = "nirala.jpeg" where id=10;
+
+
+-- update outdoor_activities e SET outdoor_image=(select CONCAT(id, outdoor_name) from outdoor_activities where id=e.id);
+-- --UPDATE outdoor_activities SET outdoor_image="1.jpeg" where id=1;
+-- --UPDATE outdoor_activities SET outdoor_image="2.jpeg" where id=2;
+-- --UPDATE outdoor_activities SET outdoor_image="3.jpeg" where id=3;
+-- --UPDATE outdoor_activities SET outdoor_image="4.jpeg" where id=4;
+-- --UPDATE outdoor_activities SET outdoor_image="5.jpeg" where id=5;
+-- --UPDATE outdoor_activities SET outdoor_image="6.jpeg" where id=6;
+-- --UPDATE outdoor_activities SET outdoor_image="7.jpeg" where id=7;
+-- --UPDATE outdoor_activities SET outdoor_image="8.jpeg" where id=8;
+-- --UPDATE outdoor_activities SET outdoor_image="9.jpeg" where id=9;
+-- --UPDATE outdoor_activities SET outdoor_image="10.jpeg" where id=10;
+
+update outdoor_activities set outdoor_image = "osterley house.jpeg" where id=1;
+update outdoor_activities set outdoor_image = "syon park.jpeg" where id=2;
+update outdoor_activities set outdoor_image = "hanwell zoo.jpeg" where id=3;
+update outdoor_activities set outdoor_image = "kew gardens.jpeg" where id=4;
+update outdoor_activities set outdoor_image = "puttstarts.jpeg" where id=5;
+update outdoor_activities set outdoor_image = "merry peddler.jpeg" where id=6;
+update outdoor_activities set outdoor_image = "paddle.jpeg" where id=7;
+update outdoor_activities set outdoor_image = "twickenham.jpeg" where id=8;
+update outdoor_activities set outdoor_image = "rugby museum.jpeg" where id=9;
+update outdoor_activities set outdoor_image = "tate britain.jpeg" where id=10;
+
+update local_events set event_image = "pub in park.jpeg" where id=1;
+update local_events set event_image = "junction.jpeg" where id=2;
+update local_events set event_image = "xmas at kew.jpeg" where id=3;
+update local_events set event_image = "food festival.jpeg" where id=4;
+update local_events set event_image = "enchanted woodland.jpeg" where id=5;
+update local_events set event_image = "hogarth house.jpeg" where id=6;
+update local_events set event_image = "pub icomedy.jpeg" where id=7;
+update local_events set event_image = "waterworks.jpeg" where id=8;
+update local_events set event_image = "duckpond.jpeg" where id=9;
+update local_events set event_image = "outdoor theatre.jpeg" where id=10;
+
+update into_london set london_image = "bar elba.jpeg" where id=1;
+update into_london set london_image = "navtar.jpeg" where id=2;
+update into_london set london_image = "healing comedy.jpeg" where id=3;
+update into_london set london_image = "boroughmarket.jpeg" where id=4;
+update into_london set london_image = "shard.jpeg" where id=5;
+update into_london set london_image = "waterfront.jpeg" where id=6;
+update into_london set london_image = "wandsworth.jpeg" where id=7;
+update into_london set london_image = "waterloo railway.jpeg" where id=8;
+update into_london set london_image = "bone daddies.jpeg" where id=9;
+update into_london set london_image = "comedy vauxhall.jpeg" where id=10;
