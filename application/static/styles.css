@@ -1,3 +1,10 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@500&family=Quintessential&display=swap');
+</style>
+
+font-family: 'Libre Baskerville', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Quintessential', cursive;
 
 body { min-height: 100vh; }
 
@@ -22,6 +29,7 @@ body {
 }
 .navbar-nav-primary {
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-form-search {
@@ -64,18 +72,23 @@ body {
 
 
 body {
-    background-color: rgb(245, 245, 220);
-    font-style: italic;
+    background-color: rgb(226, 218, 219);
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
-    color: brown;
-}
+    color: rgb(191, 172, 181);
+    font-family: 'Open Sans', sans-serif;
 
 h1 {
-    color: rgb(19, 17, 17);
+    color: rgb(78, 74, 89);
+    font-family: 'Libre Baskerville', serif;
 }
 
 h2 {
-    color: brown;
+    color: rgb(78, 74, 89);
+    font-family: 'Libre Baskerville', serif;
+}
+h5{
+font-size: 60px
 }
