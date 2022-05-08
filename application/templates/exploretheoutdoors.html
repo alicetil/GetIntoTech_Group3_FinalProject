@@ -3,8 +3,24 @@
 
 {% block content %}
 <!--INPUT YOUR HTML CODE FOR THIS PAGE HERE!-->
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<style>
+      .card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+    row-count:3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+    row-count:3;
+  }
 
+.row{
+row-count:3;
+}
 
+</style>
 
 <section>
 <!--<h2> INTO THE CITY CENTRE table example!</h2>-->
@@ -50,9 +66,18 @@ Whether you're wth your family, colleagues or on your own, getting outdoors afte
     {% else %}
 
     {% for item in outdoors %}
-    {% if forloop.counter0|divisableby:3 %} <div class="row"> {% endif %}
-<!--        <div class="col-md-4">-->
-                <div id={item.id} class="card article">
+<!--        <div class="row">-->
+<!--            <div class="card-columns">-->
+<!--             <div class="row row-cols-1 row-cols-md-2 g-4">-->
+<!--             <div class="col">-->
+<!--    <div class="card">-->
+    <div class="container">
+        <div class="row">
+            <div class="col w-100">
+<!--    <div class="container">-->
+<!--        <div class="row-sm">-->
+<!--             <div class="col-sm">-->
+                 <div id={item.id} class="card">
                     <img class="card-img-top" class="responsive opacity" src="{{ url_for('static', filename='images/'+item.outdoor_image) }} " alt="{{ item.outdoor_name }}">
                     <div class="card-body">
                       <h5 class="card-title">{{ item.outdoor_name }}</h5>
@@ -60,22 +85,23 @@ Whether you're wth your family, colleagues or on your own, getting outdoors afte
                       <p class="card-text">{{ item.outdoor_descriptions }}</p>
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">{{item.outdoor_affordability}}</li>
-                        <li class="list-group-item">{{item.outdoor_location }}</li>
                         <li class="list-group-item">{{item.outdoor_address}}</li>
                         <li class="list-group-item">{{item.outdoor_discount}}</li>
                       </ul>
                     </div>
                 </div>
+                </div>
         </div>
-            {% if forloop.counter|divisibleby:3 or forloop.last %}</div><br>{% endif %}
+
      {% endfor %}
+    {% endif %}
 
         </div>
 <!--</div>-->
 <!--        </div>-->
 </section>
 
-{% endblock %}
+
 
 <!--CAN DELETE BELOW AFTER LAYOUT WORKS -->
 <!--&lt;!&ndash;        Card 3 &ndash;&gt;-->
@@ -152,3 +178,4 @@ Whether you're wth your family, colleagues or on your own, getting outdoors afte
 
 
 
+{% endblock %}
