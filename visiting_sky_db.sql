@@ -144,9 +144,13 @@ update into_london set london_discount = "10% off - redeem online with code SKYD
 update into_london set london_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=8;
 
 alter table recommendations modify column recommendation_website varchar (1000);
-<<<<<<< HEAD
+
  
+-- removed blob from images column and replacing with varchar(1000) for below tables : 
 alter table outdoor_activities modify column outdoor_image varchar (1000);
+alter table restaurants modify column restaurant_image varchar (1000);
+alter table local_events modify column event_image varchar (1000);
+alter table into_london modify column london_image varchar (1000);
 
 
 -- update outdoor_activities e SET outdoor_image=(select CONCAT(id, outdoor_name) from outdoor_activities where id=e.id);
@@ -182,6 +186,8 @@ select * from outdoor_activities;
 select * from local_events;
 select * from into_london;
 select * from recommendations;
+
+
 
 -- need to update id 4 to a non duplicated event/place on recommendations table (same as id 1)
 -- also add discounts...it's coming up as null on website (amended Rform class to stringfield..) 
