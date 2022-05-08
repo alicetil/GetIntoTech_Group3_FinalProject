@@ -48,6 +48,10 @@ We love supporting the local area and what better way than to advertise local ev
         {% for item in localevents %}
                 <div id={item.id} class="card" style="width: 18rem;">
                     <img class="card-img-top" src="{{ url_for('static', filename='images/'+item.event_image) }} " alt="{{ item.event_name }}">
+<<<<<<< HEAD
+=======
+<!--                    <img class="card-img-top" src="static/images/{item.outdoor_image}" alt="Tree">-->
+>>>>>>> 424077612e6a0b8985fd0ec584656952eb2ed4fc
                     <div class="card-body">
                       <h5 class="card-title">{{ item.event_name }}</h5>
                         <a class="btn btn-primary" href="{{item.event_website}}" role="button">Click Here</a>
