@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="749b8b14-a43d-4b9f-b2b4-0f34589e3baa" name="Changes" comment="" />
+    <list default="true" id="749b8b14-a43d-4b9f-b2b4-0f34589e3baa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/application/templates/placestoeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/placestoeat.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
