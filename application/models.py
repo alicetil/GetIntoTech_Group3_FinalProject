@@ -11,7 +11,7 @@ print(get_all_restaurants())
 # restaurant_description='Delicious authentic Thai cuisine with a bar. A peaceful elegant restaurant with bamboo outdoor terrance.',
 # restaurant_cuisine_type='Thai', restaurant_dietary_options='Vegetarian and Vegan options',
 # restaurant_affordablity='£10-38 depending on dishes', restaurant_discount=None),
-#
+
 #  Restaurants(id=2, restaurant_name='The Hare and Hounds', restaurant_address='Wyke Green, Osterely Lane, Isleworth TW7 5PR',
 # restaurant_location='Quite close to Sky Campus as it is 1.0 miles away which is a 4 minute drive or an 18 minute walk.',
 # restaurant_website='hareandhoundsosterley.co.uk',

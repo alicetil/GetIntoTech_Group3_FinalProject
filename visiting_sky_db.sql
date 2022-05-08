@@ -198,14 +198,6 @@ update recommendations set recommendation_website = "https://www.nationaltrust.o
 
 
 
-
-
-
-
-
-
-=======
-
 update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/tigerlily.jpeg" where id=1;
 update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=2;
 update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=3;
@@ -249,4 +241,4 @@ update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_F
 update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=8;
 update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=9;
 update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=10;
->>>>>>> origin
+
