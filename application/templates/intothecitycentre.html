@@ -44,7 +44,7 @@ Osterley doesn't exactly have London city centre on its doorstep but it might be
     {% else %}
         {% for item in cityevents %}
                 <div id={item.id} class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="static/images/{item.restaurant_image}" alt="Tree">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/'+item.london_image) }} " alt="{{ item.outdoor_name }}">
                     <div class="card-body">
                       <h5 class="card-title">{{ item.london_name }}</h5>
                         <a class="btn btn-primary" href="{{item.london_website}}" role="button">Click Here</a>
