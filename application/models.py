@@ -3,6 +3,7 @@ from service import get_all_outdoor_activities, get_all_restaurants
 # print(get_all_outdoor_activities())
 print(get_all_restaurants())
 
+# THIS PAGE IS JUST TO SEE WHAT ROUTES IS ACCESSING IN SQL DATABASE- WILL DELETE SOON
 
 # [Restaurants(id=1, restaurant_name='Tiger Lily', restaurant_address='167 - 169 Thornbury Rd, Osterley TW7 4QG',
 # restaurant_location='Quite close to Sky Campus as it is 1.5 miles away which is a 5 minute drive or 15 minutes via Public transport',
@@ -24,6 +25,7 @@ print(get_all_restaurants())
 # restaurant_website='www.terminal6lounge.com'
 
 
+#print(get_all_outdoor_activities())
 
 # [OutdoorActivities(id=1, outdoor_name='National Trust - Osterely Park and House', outdoor_address='Jersey Rd, Isleworth TW7 4RB, United Kingdom',
 # outdoor_website='https://www.nationaltrust.org.uk/osterley-park-and-house', outdoor_image='1.jpeg',
