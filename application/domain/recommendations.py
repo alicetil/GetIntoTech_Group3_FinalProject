@@ -61,4 +61,3 @@ class Recommendations(db.Model):
 # database model = an object/ blueprint in which our database will be stored
 # so above is telling system, all recommendations given need to look
 # like the content held in the class called Recommendations above
-

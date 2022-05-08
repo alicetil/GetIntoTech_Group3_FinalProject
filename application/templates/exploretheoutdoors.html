@@ -61,10 +61,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
                         <a class="btn btn-primary" href="{{ item.outdoor_website }}" role="button">Click Here</a>
                       <p class="card-text">{{ item.outdoor_descriptions }}</p>
                       <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Thai</li>
-                        <li class="list-group-item">Vegetarian options available</li>
-                        <li class="list-group-item">Osterley</li>
-                        <li class="list-group-item">££</li>
+                        <li class="list-group-item">{{item.outdoor_affordability}}</li>
+                        <li class="list-group-item">{{ item.outdoor_location }}</li>
+                        <li class="list-group-item">{{item.outdoor_address}}</li>
+                        <li class="list-group-item">{{item.outdoor_discount}}</li>
                       </ul>
                     </div>
                 </div>

@@ -41,7 +41,7 @@
           <p class="lead text-muted"> Below are your recommendations around campus. If you know something fun coming up,
               don't keep it to yourself; add below!</p>
           <p>
-<!--            <a href="http://127.0.0.1:5000/recommendations" class="btn btn-primary my-2">Recommend here</a>-->
+            <a href="http://127.0.0.1:5000/recommendations" class="btn btn-primary my-2">Recommend here</a>
               <a href="https://www.google.co.uk/maps" class="btn btn-secondary my-2"> How to get there? </a>
           </p>
         </div>
@@ -62,7 +62,7 @@
     {% else %}
         {% for item in recommendations %}
                 <div id={item.id} class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="static/images/{item.outdoor_image}" alt="Tree">
+                    <img class="card-img-top" src="static/images/roses.jpeg" alt="Tree">
                     <div class="card-body">
                       <h5 class="card-title">{{ item.recommendation_name }}</h5>
                         <a class="btn btn-primary" href="{{item.recommendation_website}}" role="button">Click Here</a>
@@ -70,7 +70,7 @@
                       <ul class="list-group list-group-flush">
                         <li class="list-group-item">{{ item.recommendation_category }}</li>
                         <li class="list-group-item">{{item.recommendation_location}}</li>
-                        <li class="list-group-item">Authored by: {{item.recommendation_author}}</li>
+                        <li class="list-group-item">Recommended by: {{item.recommendation_author}}</li>
                         <li class="list-group-item">££ {{item.recommendation_discount}}</li>
                       </ul>
                     </div>

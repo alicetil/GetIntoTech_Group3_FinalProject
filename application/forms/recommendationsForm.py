@@ -15,5 +15,4 @@ class RecommendForm(FlaskForm):
     recommendation_discount = StringField("Discount Amount")
 
 
-    submit = SubmitField("Add Recommended Restaurant")
-
+    submit = SubmitField("Submit Recommendation")

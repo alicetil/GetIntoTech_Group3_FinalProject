@@ -17,8 +17,7 @@
 <!--intro info code-->
 <br>
     <p class="lead">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, </p>
+Osterley doesn't exactly have London city centre on its doorstep but it might be easier than you think to make a trip into the Big Smoke. A direct train from Syon Lane (a short walk from Osterley campus) takes you to Putney, Waterloo and London Bridge in under an hour. Perhaps on your next visit to Osterley campus, you'd like to try one of these recommendations to enjoy an evening in London itself. </p>
 
 <br>
     <br>
@@ -45,7 +44,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
     {% else %}
         {% for item in cityevents %}
                 <div id={item.id} class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="static/images/{item.restaurant_image}" alt="Tree">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/'+item.london_image) }} " alt="{{ item.outdoor_name }}">
                     <div class="card-body">
                       <h5 class="card-title">{{ item.london_name }}</h5>
                         <a class="btn btn-primary" href="{{item.london_website}}" role="button">Click Here</a>
@@ -157,4 +156,3 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 
 {% endblock %}
-

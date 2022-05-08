@@ -12,6 +12,12 @@
 </div>
 <br>
 <!--intro info code-->
+<br>
+    <p class="lead">
+We love supporting the local area and what better way than to advertise local events, festivals and concerts around the Sky Osterley campus. Check the date to make sure you can make it and then go onto the website to book your tickets!
+</p>
+
+    <br>
 
 <br>
     <br>
@@ -41,7 +47,8 @@
     {% else %}
         {% for item in localevents %}
                 <div id={item.id} class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="static/images/{item.outdoor_image}" alt="Tree">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/'+item.event_image) }} " alt="{{ item.event_name }}">
+<!--                    <img class="card-img-top" src="static/images/{item.outdoor_image}" alt="Tree">-->
                     <div class="card-body">
                       <h5 class="card-title">{{ item.event_name }}</h5>
                         <a class="btn btn-primary" href="{{item.event_website}}" role="button">Click Here</a>
@@ -110,4 +117,3 @@
 
 
 {% endblock %}
-

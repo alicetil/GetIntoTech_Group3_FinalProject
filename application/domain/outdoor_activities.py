@@ -6,6 +6,7 @@ from dataclasses import dataclass
 class OutdoorActivities(db.Model):
     id : int
     outdoor_name: str
+    # add location?? to be consistent with the other tables
     outdoor_address: str
     outdoor_website: str
     outdoor_image: str
@@ -21,4 +22,3 @@ class OutdoorActivities(db.Model):
     outdoor_descriptions =db.Column(db.String(1000),nullable =True)
     outdoor_affordability = db.Column(db.String(1000),nullable =True)
     outdoor_discount = db.Column(db.String(100),nullable =True)
-
