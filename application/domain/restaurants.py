@@ -11,7 +11,7 @@ class Restaurants(db.Model):
     restaurant_address: str
     restaurant_location: str
     restaurant_website: str
-    # restaurant_image:
+    restaurant_image: str
     restaurant_description: str
     restaurant_cuisine_type: str
     restaurant_dietary_options: str
@@ -24,7 +24,7 @@ class Restaurants(db.Model):
     restaurant_address = db.Column(db.String(100), nullable=False)
     restaurant_location = db.Column(db.String(1000), nullable=True)
     restaurant_website = db.Column(db.String(100), nullable=True)
-    # restaurant_image = db.Column(db.)
+    restaurant_image = db.Column(db.String(1000))
     restaurant_description = db.Column(db.String(1000), nullable=True)
     restaurant_cuisine_type = db.Column(db.String(100), nullable=False)
     restaurant_dietary_options = db.Column(db.String(100), nullable=True)
