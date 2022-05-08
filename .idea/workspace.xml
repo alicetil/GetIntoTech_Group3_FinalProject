@@ -2,55 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="749b8b14-a43d-4b9f-b2b4-0f34589e3baa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/bar elba.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/bone daddies.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/boroughmarket.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/comedy vauxhall.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/comedy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/creams.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/duckpond.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/enchanyed woodland.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/farfresh.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/food festival.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/hanwell zoo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/hare houn.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/healing comedy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/heavenly.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/hogarth house.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/junction.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/kew gardens.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/mans vs.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/merry peddler.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/navtar.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/nirala.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/outdoor theatre.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/paddle.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/pub in park.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/puttstarts.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/rugby museum.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/sahara.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/shard.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/syon park.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/tate britain.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/terminal6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/twickenham.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/vegology.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/wandsworth.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/waterfront.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/waterloo railway.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/waterworks.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/static/images/xmas at kew.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/into_london.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/into_london.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/outdoor_activities.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/outdoor_activities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/restaurants.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/restaurants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/exploretheoutdoors.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/exploretheoutdoors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/intothecitycentre.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/intothecitycentre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/localevents.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/localevents.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/placestoeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/placestoeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visiting_sky_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/visiting_sky_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
