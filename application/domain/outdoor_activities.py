@@ -6,6 +6,7 @@ from dataclasses import dataclass
 class OutdoorActivities(db.Model):
     id : int
     outdoor_name: str
+    # add location?? to be consistent with the other tables
     outdoor_address: str
     outdoor_website: str
     outdoor_image: str
