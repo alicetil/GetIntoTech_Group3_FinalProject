@@ -24,3 +24,4 @@ class LocalEvents(db.Model):
     event_website =db.Column(db.String(100),nullable=False)
     # event_image : imghdr
     event_category = db.Column(db.String(100),nullable=True)
+

@@ -8,7 +8,7 @@ class OutdoorActivities(db.Model):
     outdoor_name: str
     outdoor_address: str
     outdoor_website: str
-    outdoor_image : str
+    outdoor_image: str
     outdoor_descriptions: str
     outdoor_affordability: str
     outdoor_discount: str
@@ -21,3 +21,4 @@ class OutdoorActivities(db.Model):
     outdoor_descriptions =db.Column(db.String(1000),nullable =True)
     outdoor_affordability = db.Column(db.String(1000),nullable =True)
     outdoor_discount = db.Column(db.String(100),nullable =True)
+

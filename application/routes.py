@@ -110,6 +110,7 @@ def local_events():
 def explore_the_outdoors():
     try:
         outdoors = service.get_all_outdoor_activities()
+        # print(outdoors)
 
         # outdoors_dict = [x.__dict__ for x in outdoors ]  outdoors=outdoors_dict
 
@@ -118,8 +119,7 @@ def explore_the_outdoors():
         return render_template("exploretheoutdoors.html", message=f"Failed to fetch Outdoor Activities: {err}")
 
 
-
-# NEXT RECCOMENDATIONS PAGE FOR EXEPTION BLOCK:
+# NEXT RECOMMENDATIONS AKA LIST PAGE FOR EXCEPTION BLOCK:
 @app.route('/list', methods=['GET'])
 def show_recomm_list():
     # return "<h1>Recommendations List Page</h1>"
@@ -129,4 +129,3 @@ def show_recomm_list():
         error = "There are no recommendations to display. Do add one!"
     return render_template("list_recommendations.html", recommendations=recommendations, message=error)
 
-# branch 7thmaywork

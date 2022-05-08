@@ -40,6 +40,7 @@ create table outdoor_activities(
  outdoor_descriptions varchar(1000),
  outdoor_affordability varchar (100) not null);
  
+ 
 
 insert into outdoor_activities values (1 , 'National Trust - Osterely Park and House', 'Jersey Rd, Isleworth TW7 4RB, United Kingdom', 'https://www.nationaltrust.org.uk/osterley-park-and-house' , '', 'Stroll up the tree-lined drive, past the grazing Charolais cattle and you''d think you''re in the country, not urban Hounslow. Surrounded by gardens, park and farmland, Osterley is one of the last surviving country estates in London.',
 '£13 - £20 - Depending on ticket type');
@@ -143,3 +144,101 @@ update into_london set london_discount = "10% off - redeem online with code SKYD
 update into_london set london_discount = "15% off - redeem online use code SKYEMPLOYEE" where id=8;
 
 alter table recommendations modify column recommendation_website varchar (1000);
+
+ 
+-- removed blob from images column and replacing with varchar(1000) for below tables : 
+alter table outdoor_activities modify column outdoor_image varchar (1000);
+alter table restaurants modify column restaurant_image varchar (1000);
+alter table local_events modify column event_image varchar (1000);
+alter table into_london modify column london_image varchar (1000);
+
+
+-- update outdoor_activities e SET outdoor_image=(select CONCAT(id, outdoor_name) from outdoor_activities where id=e.id);
+
+select * from outdoor_activities;
+
+UPDATE outdoor_activities SET outdoor_image="1.jpeg" where id=1;
+UPDATE outdoor_activities SET outdoor_image="2.jpeg" where id=2;
+UPDATE outdoor_activities SET outdoor_image="3.jpeg" where id=3;
+UPDATE outdoor_activities SET outdoor_image="4.jpeg" where id=4;
+UPDATE outdoor_activities SET outdoor_image="5.jpeg" where id=5;
+UPDATE outdoor_activities SET outdoor_image="6.jpeg" where id=6;
+UPDATE outdoor_activities SET outdoor_image="7.jpeg" where id=7;
+UPDATE outdoor_activities SET outdoor_image="8.jpeg" where id=8;
+UPDATE outdoor_activities SET outdoor_image="9.jpeg" where id=9;
+UPDATE outdoor_activities SET outdoor_image="10.jpeg" where id=10;
+
+ -- updating restaurant websites to start with https:  otherwise it won't be picked up by jinja template
+ 
+update restaurants set restaurant_website = "https://tigerlilyofosterley.co.uk/" where id=1;
+update restaurants set restaurant_website = "https://hareandhoundsosterley.co.uk/" where id=2;
+update restaurants set restaurant_website = "https://terminal6lounge.com/" where id=3;
+update restaurants set restaurant_website = "https://www.saharagrill.co.uk/" where id=4;
+update restaurants set restaurant_website = "https://manvsfoodlondon.co.uk/" where id=5;
+update restaurants set restaurant_website = "https://vegologyldn.com/" where id=6;
+update restaurants set restaurant_website = "https://farfeshlounge.co.uk/" where id=7;
+update restaurants set restaurant_website = "https://www.creamscafe.co.uk/" where id=8;
+update restaurants set restaurant_website = "https://www.niralafoods.com/" where id=10;
+
+select * from restaurants;
+select * from restaurants;
+select * from outdoor_activities;
+select * from local_events;
+select * from into_london;
+select * from recommendations;
+
+
+
+-- need to update id 4 to a non duplicated event/place on recommendations table (same as id 1)
+-- also add discounts...it's coming up as null on website (amended Rform class to stringfield..) 
+
+update recommendations set recommendation_website = "https://cookingwithmonisha.com/" where id=5;
+update recommendations set recommendation_website = "https://www.nationaltrust.org.uk/osterley-park-and-house/features/osterley-national-trust-cafe/" where id=1;
+update recommendations set recommendation_website = "https://www.nationaltrust.org.uk/osterley-park-and-house/features/osterley-national-trust-cafe/" where id=4;
+
+
+
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/tigerlily.jpeg" where id=1;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=2;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=3;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=4;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=5;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=6;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=7;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=8;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=9;
+update restaurants set restaurant_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/" where id=10;
+
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/osterley house.jpeg" where id=1;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/syon park.jpeg" where id=2;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/hanwell zoo.jpeg" where id=3;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/kew gardens.jpeg" where id=4;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/puttstarts.jpeg" where id=5;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/merry peddler.jpeg" where id=6;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/paddle.jpeg" where id=7;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/twickenham.jpeg" where id=8;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/rugby museum.jpeg" where id=9;
+update outdoor_activities set outdoor_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/tate britain.jpeg" where id=10;
+
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/pub in park.jpeg" where id=1;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/junction.jpeg" where id=2;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/xmas at kew.jpeg" where id=3;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/food festival.jpeg" where id=4;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/enchanted woodland.jpeg" where id=5;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/hogarth house.jpeg" where id=6;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/pub icomedy.jpeg" where id=7;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/waterworks.jpeg" where id=8;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/duckpond.jpeg" where id=9;
+update local_events set event_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/outdoor theatre.jpeg" where id=10;
+
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/bar elba.jpeg" where id=1;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/navtar.jpeg" where id=2;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/healing comedy.jpeg" where id=3;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/boroughmarket.jpeg" where id=4;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/shard.jpeg" where id=5;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=6;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=7;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=8;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=9;
+update into_london set lodnon_image = "/Users/alicetildsley/GetIntoTech_Group3_FinalProject/application/static/images/.jpeg" where id=10;
+
