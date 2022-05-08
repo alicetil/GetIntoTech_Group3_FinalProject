@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="749b8b14-a43d-4b9f-b2b4-0f34589e3baa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/into_london.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/into_london.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/local_events.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/local_events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/outdoor_activities.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/outdoor_activities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/recommendations.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/recommendations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/domain/restaurants.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/domain/restaurants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/forms/recommendationsForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/forms/recommendationsForm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/exploretheoutdoors.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/exploretheoutdoors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/templates/intothecitycentre.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/templates/intothecitycentre.html" afterDir="false" />
-    </list>
+    <list default="true" id="749b8b14-a43d-4b9f-b2b4-0f34589e3baa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
