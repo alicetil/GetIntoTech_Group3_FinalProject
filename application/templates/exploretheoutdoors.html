@@ -6,19 +6,7 @@
 <head>
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 <style>
-      .card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 3;
-    row-count:3;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 3;
-    row-count:3;
-  }
 
-.row{
-row-count:3;
-}
 
 </style>
 
@@ -66,18 +54,11 @@ Whether you're wth your family, colleagues or on your own, getting outdoors afte
     {% else %}
 
     {% for item in outdoors %}
-<!--        <div class="row">-->
-<!--            <div class="card-columns">-->
-<!--             <div class="row row-cols-1 row-cols-md-2 g-4">-->
-<!--             <div class="col">-->
-<!--    <div class="card">-->
     <div class="container">
         <div class="row">
-            <div class="col w-100">
-<!--    <div class="container">-->
-<!--        <div class="row-sm">-->
-<!--             <div class="col-sm">-->
-                 <div id={item.id} class="card">
+            <div class="col">
+                <div class="card-deck">
+                 <div id={item.id} class="card" >
                     <img class="card-img-top" class="responsive opacity" src="{{ url_for('static', filename='images/'+item.outdoor_image) }} " alt="{{ item.outdoor_name }}">
                     <div class="card-body">
                       <h5 class="card-title">{{ item.outdoor_name }}</h5>
@@ -92,7 +73,6 @@ Whether you're wth your family, colleagues or on your own, getting outdoors afte
                 </div>
                 </div>
         </div>
-
      {% endfor %}
     {% endif %}
 

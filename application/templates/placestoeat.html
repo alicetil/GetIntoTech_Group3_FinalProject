@@ -68,8 +68,8 @@ With plenty of places to eat in Sky Osterley campus itself, you'd be surprised w
 
 <!--    New layout with margins on the card deck-->
 
-    <div class="container-fluid">
-        <div class="card-deck">
+<!--    <div class="container-fluid">-->
+<!--        <div class="card-deck">-->
 
             <!--                   Card 1 using jinja templating-->
 <div>
@@ -77,6 +77,10 @@ With plenty of places to eat in Sky Osterley campus itself, you'd be surprised w
         <p>{{ message }}</p>
     {% else %}
         {% for item in restaurants %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card-deck">
                 <div id={item.id} class="card" style="width: 18rem;">
                     <img class="card-img-top" src="{{ url_for('static', filename='images/'+item.restaurant_image) }} " alt="{{ item.restaurant_name }}">
 
